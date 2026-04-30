@@ -45,6 +45,16 @@ Lesson-specific issues go in the relevant lesson HTML:
 - Homework
 - Lesson navigation anchors
 
+## Encoding Safety Rules
+
+Chinese lesson HTML files must stay UTF-8. Treat encoding as a high-risk rule because one unsafe write can turn the full lesson into mojibake.
+
+- Prefer `apply_patch` for small HTML edits, especially `<title>`, headings, copy, and navigation labels.
+- Do not use PowerShell `Set-Content` / `Out-File` / line-array rewrites on a whole HTML file unless the command explicitly reads and writes UTF-8.
+- If a whole-file rewrite is unavoidable, use an explicit UTF-8 writer and verify immediately with `Get-Content -Encoding UTF8`.
+- After editing a Chinese HTML file, check the first screen text and the browser tab title for mojibake before continuing.
+- If mojibake appears, restore from git or the latest clean copy first, then reapply only the intended small edit.
+
 ## Creating a New Lesson
 
 1. Copy `templates/lesson_template.html`.

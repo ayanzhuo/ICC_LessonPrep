@@ -27,3 +27,4 @@
 - For new lessons, copy `templates/lesson_template.html` into a new folder such as `Lesson03/lesson03.html`.
 - Do not regenerate existing completed HTML files from older outer files.
 - Older files outside `ICC_LessonPrep` should be treated as history copies.
+- Keep Chinese HTML files in UTF-8. Use `apply_patch` for small text edits and avoid whole-file PowerShell rewrites unless UTF-8 read/write is explicit and verified.
