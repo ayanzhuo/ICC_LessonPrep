@@ -1,9 +1,9 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{课程名}}{{课时编号}}｜{{课时主题}}</title>
+  <title>科创赛事集训|第{{N}}课时｜{{课时主题}}</title>
   <link rel="stylesheet" href="../assets/common.css" />
 </head>
 <body>
@@ -78,113 +78,263 @@
       <path d="M12 18v3"></path>
     </symbol>
   </svg>
+
   <div class="deck">
     <header class="toolbar">
-      <div class="toolbar-title">{{课程名}}｜{{课时编号}}</div>
+      <div class="toolbar-title">科创赛事集训|第{{N}}课时</div>
       <nav aria-label="课件导航">
         <a href="#cover">封面</a>
         <a href="#route">路线</a>
-        <a href="#q-core">核心问题</a>
-        <a href="#concept">概念</a>
-        <a href="#case">案例</a>
-        <a href="#activity">课堂活动</a>
-        <a href="#work-pause">停下来做</a>
-        <a href="#output">本课产出</a>
-        <a href="#homework">课后任务</a>
+        <a href="#outputs">产出</a>
+        <a href="#q-core">大问题</a>
+        <a href="#story">故事</a>
+        <a href="#concept">方法</a>
+        <a href="#project-system">系统</a>
+        <a href="#project-four">四组</a>
+        <a href="#materials">材料</a>
+        <a href="#media">案例</a>
+        <a href="#work-observe">观察</a>
+        <a href="#work-write">书写</a>
+        <a href="#evidence">证据</a>
+        <a href="#log">日志</a>
+        <a href="#team">分工</a>
+        <a href="#speech">展示</a>
+        <a href="#break">休息</a>
+        <a href="#next">衔接</a>
+        <a href="#homework">课后</a>
         <button class="print-btn" type="button" onclick="window.print()">打印</button>
       </nav>
     </header>
 
     <section class="slide visual-cover" id="cover">
-      <span class="cover-kicker">{{课程名}}｜{{课时编号}}</span>
+      <span class="cover-kicker">科创赛事集训|第{{N}}课时</span>
       <div class="cover-title-frame">
         <h1>{{课时主题}}</h1>
-        <p class="lead">{{一句话目标}}</p>
+        <p class="lead">{{一句话目标：本课把学生从哪里带到哪里}}</p>
       </div>
-      <div class="cover-pills">
-        <span class="outline-pill">{{日期}}</span>
-        <span class="outline-pill">{{课时编号}}</span>
-        <span class="outline-pill">1小时</span>
-        <span class="outline-pill">{{本课关键词}}</span>
+      <div class="cover-collage" aria-label="四个项目方向图">
+        <img src="https://images.pexels.com/photos/9031976/pexels-photo-9031976.jpeg?auto=compress&cs=tinysrgb&w=900" alt="查看冰箱食材" />
+        <img src="https://images.pexels.com/photos/1444630/pexels-photo-1444630.jpeg?auto=compress&cs=tinysrgb&w=900" alt="果园里的果实" />
+        <img src="https://images.pexels.com/photos/13323677/pexels-photo-13323677.jpeg?auto=compress&cs=tinysrgb&w=900" alt="办公区照明" />
+        <img src="https://images.pexels.com/photos/11027265/pexels-photo-11027265.jpeg?auto=compress&cs=tinysrgb&w=900" alt="车辆与骑行者" />
       </div>
     </section>
 
     <section class="slide" id="route">
-      <p class="eyebrow">本课路线</p>
-      <h2>{{从什么到什么}}</h2>
-      <div class="route-steps-visual">
-        <div class="route-step-line"><span class="route-num">1</span><div><strong>{{环节1}}</strong><span>{{环节1说明}}</span></div></div>
-        <div class="route-step-line"><span class="route-num">2</span><div><strong>{{环节2}}</strong><span>{{环节2说明}}</span></div></div>
-        <div class="route-step-line"><span class="route-num">3</span><div><strong>{{环节3}}</strong><span>{{环节3说明}}</span></div></div>
-        <div class="route-step-line"><span class="route-num">4</span><div><strong>{{环节4}}</strong><span>{{环节4说明}}</span></div></div>
+      <div class="route-subtitle">
+        <p class="eyebrow">本课路线</p>
+        <h2>{{从一个真实场景，到一个可推进的课堂产出}}</h2>
       </div>
+      <div class="route-steps-visual">
+        <div class="route-step-line"><span class="route-num">1</span><div><strong>{{先看见}}</strong><span>{{用图片、故事或视频进入真实场景}}</span></div></div>
+        <div class="route-step-line"><span class="route-num">2</span><div><strong>{{再拆开}}</strong><span>{{把场景拆成用户、位置、现有办法和问题}}</span></div></div>
+        <div class="route-step-line"><span class="route-num">3</span><div><strong>{{动手做}}</strong><span>{{让学生停下来观察、书写、检索或搭建}}</span></div></div>
+        <div class="route-step-line"><span class="route-num">4</span><div><strong>{{留下材料}}</strong><span>{{沉淀到发明日志、查新线索、BOM 或展示素材}}</span></div></div>
+      </div>
+    </section>
+
+    <section class="slide compact" id="outputs">
+      <p class="eyebrow">本课产出</p>
+      <h2>离开教室前，每组要带走什么</h2>
+      <div class="deliverable-map">
+        <div class="deliverable-center">本课<br />带走</div>
+        <div class="deliverable-node"><span class="deliverable-num">1</span><div><strong>{{产出1}}</strong><span>{{一句话说明}}</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">2</span><div><strong>{{产出2}}</strong><span>{{一句话说明}}</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">3</span><div><strong>{{产出3}}</strong><span>{{一句话说明}}</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">4</span><div><strong>{{产出4}}</strong><span>{{一句话说明}}</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">5</span><div><strong>{{产出5}}</strong><span>{{一句话说明}}</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">6</span><div><strong>{{材料衔接}}</strong><span>进入发明日志和后续展示材料</span></div></div>
+      </div>
+      <div class="formula">{{本课最重要的一句话}}</div>
     </section>
 
     <section class="slide question-slide" id="q-core">
       <div class="question-layout">
         <div>
-          <p class="eyebrow">核心问题</p>
-          <h2 class="big-question">{{本课最重要的问题}}</h2>
-          <p class="question-prompt">{{给学生的思考边界}}</p>
+          <p class="eyebrow">本课大问题</p>
+          <h2 class="big-question">{{给学生单独思考或全班讨论的大问题}}</h2>
+          <p class="question-prompt">{{限制范围：只讨论真实场景、真实用户和可验证结果}}</p>
           <div class="question-chips">
-            <span class="question-chip">{{关键词1}}</span>
-            <span class="question-chip">{{关键词2}}</span>
-            <span class="question-chip">{{关键词3}}</span>
-            <span class="question-chip">{{关键词4}}</span>
+            <span class="question-chip">观察</span>
+            <span class="question-chip">判断</span>
+            <span class="question-chip">验证</span>
+            <span class="question-chip">选择</span>
           </div>
         </div>
         <div class="question-art">
           <svg class="line-icon"><use href="#icon-question"></use></svg>
-          <span>{{短提示}}</span>
+          <span>{{一句短提示}}</span>
         </div>
+      </div>
+    </section>
+
+    <section class="slide" id="story">
+      <p class="eyebrow">生活故事</p>
+      <h2>{{故事标题：从一个小场景开始}}</h2>
+      <div class="image-led reverse">
+        <div>
+          <div class="bubble-list">
+            <div class="green-bubble">{{故事推进1：发生了什么}}</div>
+            <div class="green-bubble">{{故事推进2：谁受影响}}</div>
+            <div class="green-bubble">{{故事推进3：现在的办法为什么不够好}}</div>
+          </div>
+          <div class="big-red-question">{{从故事里抽出的关键问题}}</div>
+        </div>
+        <img class="big-photo" src="https://images.pexels.com/photos/9031976/pexels-photo-9031976.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="{{故事图片说明}}" />
+      </div>
+      <div class="turns">
+        <div class="turn-card"><strong>现象</strong><span>{{看见了什么}}</span></div>
+        <div class="turn-card"><strong>用户</strong><span>{{谁会遇到}}</span></div>
+        <div class="turn-card"><strong>现有办法</strong><span>{{现在通常怎么处理}}</span></div>
+        <div class="turn-card"><strong>问题句</strong><span>{{谁在什么场景遇到什么问题}}</span></div>
       </div>
     </section>
 
     <section class="slide" id="concept">
-      <p class="eyebrow">概念页</p>
-      <h2>{{要讲清的概念}}</h2>
+      <p class="eyebrow">方法页</p>
+      <h2>{{本课要讲清楚的核心方法}}</h2>
       <div class="two-col">
-        <div class="segment-card"><h3>{{概念要点1}}</h3><p>{{用学生能听懂的话解释}}</p></div>
-        <div class="segment-card"><h3>{{概念要点2}}</h3><p>{{用案例或反例解释}}</p></div>
+        <div class="segment-card">
+          <h3>{{方法要点1}}</h3>
+          <p>{{用学生能听懂的话解释，尽量配合前面的故事}}</p>
+        </div>
+        <div class="segment-card">
+          <h3>{{方法要点2}}</h3>
+          <p>{{用反例说明：什么看起来像作品，但还不能支撑比赛材料}}</p>
+        </div>
       </div>
-      <div class="formula">{{一句话结论}}</div>
+      <div class="formula">{{方法公式或判断标准}}</div>
     </section>
 
-    <section class="slide" id="case">
-      <p class="eyebrow">案例页</p>
-      <h2>{{案例标题}}</h2>
-      <div class="image-led">
-        <img class="big-photo" src="{{图片URL或本地路径}}" alt="{{图片说明}}" />
-        <div>
-          <div class="bubble-list">
-            <div class="green-bubble">{{案例观察1}}</div>
-            <div class="green-bubble">{{案例观察2}}</div>
-            <div class="green-bubble">{{案例观察3}}</div>
-          </div>
-          <div class="big-red-question">{{从案例抽出的关键问题}}</div>
+    <section class="slide" id="project-system">
+      <p class="eyebrow">把作品看成小系统</p>
+      <h2>四个项目都可以先跑通一条基础链路</h2>
+      <div class="design-flow">
+        <div class="flow-visual">
+          <svg class="line-icon"><use href="#icon-user"></use></svg>
+          <strong>感知</strong>
+          <p>记录真实世界的一点变化：照片、日期、光线、位置或风险。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-visual">
+          <svg class="line-icon"><use href="#icon-search"></use></svg>
+          <strong>判断</strong>
+          <p>把观察到的变化变成一个简单结论。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-visual">
+          <svg class="line-icon"><use href="#icon-lightbulb"></use></svg>
+          <strong>提醒</strong>
+          <p>让用户在关键时刻知道下一步该做什么。</p>
+        </div>
+      </div>
+      <div class="formula">基础版的目标：能演示、能测试、能被别人看懂。</div>
+    </section>
+
+    <section class="slide" id="project-four">
+      <p class="eyebrow">四个小组｜同一方法进入不同场景</p>
+      <h2>先做一个能证明关键判断的小系统</h2>
+      <div class="prototype-grid">
+        <div class="prototype-card blue">
+          <svg class="line-icon"><use href="#icon-fridge"></use></svg>
+          <h3>冰箱食材检测</h3>
+          <p><strong>输入：</strong>食材照片、标签或放入日期。</p>
+          <p><strong>判断：</strong>是否临期、是否容易被忘记。</p>
+          <p><strong>输出：</strong>灯光、屏幕、表格或消息提醒。</p>
+        </div>
+        <div class="prototype-card green">
+          <svg class="line-icon"><use href="#icon-apple"></use></svg>
+          <h3>果园病状检查</h3>
+          <p><strong>输入：</strong>果实照片、树号和位置编号。</p>
+          <p><strong>判断：</strong>颜色异常、斑点或破损记录。</p>
+          <p><strong>输出：</strong>异常标记和巡检记录。</p>
+        </div>
+        <div class="prototype-card amber">
+          <svg class="line-icon"><use href="#icon-lamp"></use></svg>
+          <h3>无效照明监控</h3>
+          <p><strong>输入：</strong>光照强度、是否有人、区域状态。</p>
+          <p><strong>判断：</strong>不需要开灯却仍开灯。</p>
+          <p><strong>输出：</strong>区域提醒和节能记录。</p>
+        </div>
+        <div class="prototype-card red">
+          <svg class="line-icon"><use href="#icon-car"></use></svg>
+          <h3>盲区视觉提醒</h3>
+          <p><strong>输入：</strong>摄像头画面或模型盲区。</p>
+          <p><strong>判断：</strong>风险物进入盲区范围。</p>
+          <p><strong>输出：</strong>LED、蜂鸣器或屏幕提示。</p>
+        </div>
+      </div>
+      <div class="formula">小系统不等于小价值。它能证明一个关键判断，就能继续迭代。</div>
+    </section>
+
+    <section class="slide" id="materials">
+      <p class="eyebrow">材料与原型</p>
+      <h2>先用简单材料证明思路，再逐步升级</h2>
+      <div class="material-photo-grid">
+        <div class="material-photo">
+          <img src="https://images.pexels.com/photos/17210080/pexels-photo-17210080.jpeg?auto=compress&cs=tinysrgb&w=900" alt="食物提醒和购物清单" />
+          <strong>标签 / 记录</strong>
+          <p>食材名称、放入日期、临期提醒可以先用标签和表格跑通。</p>
+        </div>
+        <div class="material-photo">
+          <img src="https://images.pexels.com/photos/14766893/pexels-photo-14766893.jpeg?auto=compress&cs=tinysrgb&w=900" alt="果园和苹果" />
+          <strong>照片 / 位置</strong>
+          <p>果园项目先记录“哪棵树、哪个位置、哪张照片”。</p>
+        </div>
+        <div class="material-photo">
+          <img src="https://images.pexels.com/photos/35652372/pexels-photo-35652372.jpeg?auto=compress&cs=tinysrgb&w=900" alt="电子电路板" />
+          <strong>传感器 / 提醒</strong>
+          <p>光照、人体感应、LED 或屏幕提示可以组成基础判断链。</p>
+        </div>
+        <div class="material-photo">
+          <img src="https://images.pexels.com/photos/9799735/pexels-photo-9799735.jpeg?auto=compress&cs=tinysrgb&w=900" alt="停车场车辆" />
+          <strong>模型 / 场景</strong>
+          <p>盲区项目先用模型车、道路图和提醒灯说明风险位置。</p>
         </div>
       </div>
     </section>
 
-    <section class="slide" id="activity">
-      <p class="eyebrow">课堂活动</p>
-      <h2>{{学生要完成什么}}</h2>
-      <div class="check-strip">
-        <div class="check-pill"><h3>{{步骤1}}</h3><p>{{步骤1产出}}</p></div>
-        <div class="check-pill"><h3>{{步骤2}}</h3><p>{{步骤2产出}}</p></div>
-        <div class="check-pill"><h3>{{步骤3}}</h3><p>{{步骤3产出}}</p></div>
+    <section class="slide" id="media">
+      <p class="eyebrow">案例与视频</p>
+      <h2>{{本课可以打开的图片、视频或产品案例}}</h2>
+      <div class="media-grid">
+        <div class="media-card">
+          <img src="https://images.pexels.com/photos/4061622/pexels-photo-4061622.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱场景视频封面" />
+          <div class="media-body"><strong>看场景</strong><p>{{看视频时关注：谁、在哪里、现在怎么做}}</p></div>
+        </div>
+        <div class="media-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_fruits_scab.jpg?width=900" alt="果实病斑" />
+          <div class="media-body"><strong>看细节</strong><p>{{看图片时关注：异常特征能不能被记录}}</p></div>
+        </div>
+        <div class="media-card">
+          <img src="https://images.pexels.com/photos/12526862/pexels-photo-12526862.jpeg?auto=compress&cs=tinysrgb&w=900" alt="办公区场景" />
+          <div class="media-body"><strong>看证据</strong><p>{{记录一条可证明问题存在的证据}}</p></div>
+        </div>
       </div>
     </section>
 
-    <section class="slide student-work" id="work-pause">
+    <section class="slide student-work work-note-wall" id="work-observe">
       <div class="work-clock">
-        <div>
-          <strong>{{分钟}}</strong>
-          <span>分钟<br />{{动作}}</span>
-        </div>
+        <div><strong>{{分钟}}</strong><span>分钟<br />观察</span></div>
       </div>
       <div class="work-panel">
-        <p class="eyebrow">停下来{{想/写/搜/整理}}｜{{活动主题}}</p>
+        <p class="eyebrow">停下来观察｜先不急着想作品</p>
+        <h2>{{学生要观察或讨论的一个问题}}</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>写下看见的现象，不写结论。</span></div>
+          <div class="work-step"><b>2</b><span>圈出受影响的人和发生地点。</span></div>
+          <div class="work-step"><b>3</b><span>补一句：现在的办法为什么不够好。</span></div>
+        </div>
+        <div class="work-output">交付：{{观察记录、痛点表或问题草稿}}</div>
+      </div>
+    </section>
+
+    <section class="slide student-work work-card-grid" id="work-write">
+      <div class="work-clock">
+        <div><strong>{{分钟}}</strong><span>分钟<br />书写</span></div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">停下来写｜把讨论变成纸面结果</p>
         <h2>{{学生现在要完成的一件事}}</h2>
         <div class="work-steps">
           <div class="work-step"><b>1</b><span>{{第一步}}</span></div>
@@ -195,20 +345,82 @@
       </div>
     </section>
 
-    <section class="slide compact" id="output">
-      <p class="eyebrow">本课产出</p>
-      <h2>{{离开教室前要留下什么}}</h2>
+    <section class="slide compact" id="evidence">
+      <p class="eyebrow">证据清单</p>
+      <h2>比赛材料不是最后才补，是每节课自然留下</h2>
+      <div class="check-strip">
+        <div class="check-pill"><h3>访谈</h3><p>问真实用户：问题什么时候发生，造成什么影响。</p></div>
+        <div class="check-pill"><h3>照片</h3><p>拍下场景、现有办法、原型过程和测试结果。</p></div>
+        <div class="check-pill"><h3>截图</h3><p>保存已有产品、类似方案和搜索关键词。</p></div>
+      </div>
+      <div class="formula">证据越早收集，发明日志、查新报告、展板和路演越顺。</div>
+    </section>
+
+    <section class="slide compact" id="log">
+      <p class="eyebrow">发明日志</p>
+      <h2>今天至少留下 6 个格子</h2>
       <div class="log-page">
-        <div class="log-line">{{产出1}}</div>
-        <div class="log-line">{{产出2}}</div>
-        <div class="log-line">{{产出3}}</div>
-        <div class="log-line">{{产出4}}</div>
+        <div class="log-line">想解决什么问题：{{一句话问题}}</div>
+        <div class="log-line">怎么想到这个问题：{{故事、观察或访谈来源}}</div>
+        <div class="log-line">想达到什么结果：{{可观察、可测试的结果}}</div>
+        <div class="log-line">可能的解决方案：{{2-3 个方向}}</div>
+        <div class="log-line">查过哪些已有方案：{{关键词、网站、截图}}</div>
+        <div class="log-line">谁可以帮助你：{{同伴、家长、老师或用户}}</div>
+      </div>
+    </section>
+
+    <section class="slide" id="team">
+      <p class="eyebrow">团队推进</p>
+      <h2>每个人都拿到一个具体任务</h2>
+      <div class="role-badges">
+        <div class="role-badge"><strong>汇报人</strong><span>用 1 分钟讲清选题、用户场景和基础版方案。</span></div>
+        <div class="role-badge"><strong>记录员</strong><span>把课堂结果写进发明日志或任务表。</span></div>
+        <div class="role-badge"><strong>检索员</strong><span>找已有产品或案例截图，写一句比较。</span></div>
+        <div class="role-badge"><strong>材料员</strong><span>列出可能需要的传感器、模型、纸板、屏幕或灯。</span></div>
+      </div>
+      <div class="formula">每个人写一句：我今天之后要完成的第一件事是什么？</div>
+    </section>
+
+    <section class="slide compact" id="speech">
+      <p class="eyebrow">小组展示</p>
+      <h2>照这个句式说，别散</h2>
+      <div class="speech-script">
+        <p>我们小组的方向是 <span>______</span>。</p>
+        <p>我们想帮助 <span>______</span>，解决他们在 <span>______</span> 遇到的 <span>______</span> 问题。</p>
+        <p>我们的基础版方案可能是 <span>______</span>，它会感知 <span>______</span>，判断 <span>______</span>，提醒 <span>______</span>。</p>
+        <p>课后我们要补的证据是 <span>______</span>。</p>
+      </div>
+    </section>
+
+    <section class="slide break-slide" id="break">
+      <div class="break-layout">
+        <div class="break-sign">
+          <strong>休息一下</strong>
+          <span>{{下一课时或下一环节前，先把桌面和记录整理好}}</span>
+        </div>
+        <div class="break-copy">
+          <p class="eyebrow">课间衔接</p>
+          <h2>{{本课到这里先停住}}</h2>
+          <p class="lead">{{下一段会继续处理什么：方案、技术、材料、BOM、测试或展示}}</p>
+          <div class="formula">{{带着什么问题回来}}</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="next">
+      <p class="eyebrow">下一步</p>
+      <h2>{{从本课产出进入下一课}}</h2>
+      <div class="action-path">
+        <div class="action-stop"><strong>带回问题</strong><p>{{本课形成的问题或方案草稿}}</p></div>
+        <div class="action-stop"><strong>补齐证据</strong><p>{{访谈、照片、截图、材料链接}}</p></div>
+        <div class="action-stop"><strong>继续迭代</strong><p>{{下一课要改进或制作的部分}}</p></div>
+        <div class="action-stop"><strong>形成材料</strong><p>{{发明日志、查新报告、展板或路演素材}}</p></div>
       </div>
     </section>
 
     <section class="slide compact" id="homework">
       <p class="eyebrow">课后任务</p>
-      <h2>{{下一次课前带回什么}}</h2>
+      <h2>下一次课前带回这些材料</h2>
       <div class="action-path">
         <div class="action-stop"><strong>{{任务1}}</strong><p>{{任务1说明}}</p></div>
         <div class="action-stop"><strong>{{任务2}}</strong><p>{{任务2说明}}</p></div>
