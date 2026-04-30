@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>科创赛事集训|第1课时｜问题发现与主问题定义</title>
+  <link rel="stylesheet" href="../assets/common.css" />
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="10.5" cy="10.5" r="6.5"></circle>
+      <path d="M16 16l4 4"></path>
+    </symbol>
+    <symbol id="icon-lightbulb" viewBox="0 0 24 24">
+      <path d="M9 18h6"></path>
+      <path d="M10 22h4"></path>
+      <path d="M8 14c-1.4-1.1-2.2-2.8-2.2-4.6a6.2 6.2 0 0 1 12.4 0c0 1.8-.8 3.5-2.2 4.6-.8.7-1 1.3-1 2H9c0-.7-.2-1.3-1-2Z"></path>
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4"></circle>
+      <path d="M4.5 21c1.2-4 3.8-6 7.5-6s6.3 2 7.5 6"></path>
+    </symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24">
+      <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6Z"></path>
+      <path d="M9 4v14"></path>
+      <path d="M15 6v14"></path>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="M20 6L9 17l-5-5"></path>
+    </symbol>
+    <symbol id="icon-ai" viewBox="0 0 24 24">
+      <rect x="6" y="7" width="12" height="10" rx="3"></rect>
+      <path d="M9 7V4"></path>
+      <path d="M15 7V4"></path>
+      <circle cx="10" cy="12" r="1"></circle>
+      <circle cx="14" cy="12" r="1"></circle>
+      <path d="M10 15h4"></path>
+      <path d="M4 11h2"></path>
+      <path d="M18 11h2"></path>
+    </symbol>
+    <symbol id="icon-log" viewBox="0 0 24 24">
+      <path d="M7 3h8l3 3v15H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"></path>
+      <path d="M14 3v4h4"></path>
+      <path d="M8 12h8"></path>
+      <path d="M8 16h6"></path>
+    </symbol>
+    <symbol id="icon-fridge" viewBox="0 0 24 24">
+      <rect x="7" y="3" width="10" height="18" rx="2"></rect>
+      <path d="M7 10h10"></path>
+      <path d="M10 6v1"></path>
+      <path d="M10 13v2"></path>
+    </symbol>
+    <symbol id="icon-apple" viewBox="0 0 24 24">
+      <path d="M12 7c-4-2-8 1-7 6 1 5 4 8 7 6 3 2 6-1 7-6 1-5-3-8-7-6Z"></path>
+      <path d="M12 7c0-2 1-3 3-4"></path>
+      <path d="M12 7c-1-2-3-2-4-2"></path>
+    </symbol>
+    <symbol id="icon-lamp" viewBox="0 0 24 24">
+      <path d="M9 3h6l3 8H6l3-8Z"></path>
+      <path d="M12 11v8"></path>
+      <path d="M8 21h8"></path>
+    </symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24">
+      <path d="M5 13l2-5h10l2 5"></path>
+      <rect x="4" y="12" width="16" height="6" rx="2"></rect>
+      <circle cx="8" cy="18" r="1.5"></circle>
+      <circle cx="16" cy="18" r="1.5"></circle>
+    </symbol>
+    <symbol id="icon-question" viewBox="0 0 24 24">
+      <path d="M9.5 8a3 3 0 1 1 4.8 2.4c-1.4 1-2.3 1.8-2.3 3.6"></path>
+      <path d="M12 18h.01"></path>
+      <circle cx="12" cy="12" r="9"></circle>
+    </symbol>
+    <symbol id="icon-mic" viewBox="0 0 24 24">
+      <rect x="9" y="3" width="6" height="11" rx="3"></rect>
+      <path d="M5 11a7 7 0 0 0 14 0"></path>
+      <path d="M12 18v3"></path>
+    </symbol>
+  </svg>
+  <div class="deck">
+    <header class="toolbar">
+      <div class="toolbar-title">科创赛事集训|第1课时</div>
+      <nav aria-label="课件导航">
+        <a href="#cover">封面</a>
+        <a href="#route">路线</a>
+        <a href="#deliverables">产出</a>
+        <a href="#q-ai-human">提问1</a>
+        <a href="#opening">0-10</a>
+        <a href="#story-fridge">生活故事</a>
+        <a href="#work-ai-think">想一想</a>
+        <a href="#invent">10-25</a>
+        <a href="#q-real-invention">提问2</a>
+        <a href="#not-good">不适合</a>
+        <a href="#cases">案例</a>
+        <a href="#users">用户</a>
+        <a href="#scenes">场景卡</a>
+        <a href="#work-draw-topic">抽选题</a>
+        <a href="#media-watch">视频</a>
+        <a href="#work-observe">观察记录</a>
+        <a href="#q-find-pain">提问3</a>
+        <a href="#pain-words">痛点词</a>
+        <a href="#pain">25-45</a>
+        <a href="#story-projects">故事库</a>
+        <a href="#pain-demo">示范</a>
+        <a href="#work-pain-write">写痛点</a>
+        <a href="#ask">45-60</a>
+        <a href="#story-office">追问故事</a>
+        <a href="#ask-demo">追问</a>
+        <a href="#q-main-problem">提问4</a>
+        <a href="#work-main-problem">筛主问题</a>
+        <a href="#work-four-questions">四问填写</a>
+        <button class="print-btn" type="button" onclick="window.print()">打印</button>
+      </nav>
+    </header>
+
+<section class="slide visual-cover" id="cover">
+      <span class="cover-kicker">科创赛事集训|第1课时</span>
+      <div class="cover-title-frame">
+        <h1>AI时代，先学会发现问题</h1>
+        <p class="lead">从 AI 时代的问题意识出发，进入真实场景，筛出一个值得推进的主问题。</p>
+      </div>
+      <div class="cover-collage" aria-label="四个项目方向图片">
+        <img src="https://images.pexels.com/photos/9031976/pexels-photo-9031976.jpeg?auto=compress&cs=tinysrgb&w=900" alt="孩子查看冰箱食材" />
+        <img src="https://images.pexels.com/photos/1444630/pexels-photo-1444630.jpeg?auto=compress&cs=tinysrgb&w=900" alt="果树上的苹果" />
+        <img src="https://images.pexels.com/photos/13323677/pexels-photo-13323677.jpeg?auto=compress&cs=tinysrgb&w=900" alt="空会议室灯光" />
+        <img src="https://images.pexels.com/photos/11027265/pexels-photo-11027265.jpeg?auto=compress&cs=tinysrgb&w=900" alt="车辆旁的骑行者" />
+      </div>
+    </section>
+
+<section class="slide" id="route">
+      <p class="eyebrow">今日路线</p>
+      <h2>从生活问题到一句话选题</h2>
+      <p class="route-subtitle">一句话选题，就是先说清：帮助谁、在什么场景、解决什么问题、带来什么帮助。</p>
+      <div class="visual-route">
+        <div class="route-photo-band" aria-label="项目方向图片拼贴">
+          <img src="https://images.pexels.com/photos/8466645/pexels-photo-8466645.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱里的蔬果" />
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_fruits_scab.jpg?width=900" alt="带病斑的苹果" />
+          <img src="https://images.pexels.com/photos/16859956/pexels-photo-16859956.jpeg?auto=compress&cs=tinysrgb&w=900" alt="空会议厅灯光" />
+          <img src="https://images.pexels.com/photos/9552140/pexels-photo-9552140.jpeg?auto=compress&cs=tinysrgb&w=900" alt="停车场车辆侧后方" />
+        </div>
+        <div class="route-steps-visual">
+          <div class="route-step-line"><span class="route-num">1</span><div><strong>发现真实问题</strong><span>AI 会回答问题，但真实问题来自生活观察。</span></div></div>
+          <div class="route-step-line"><span class="route-num">2</span><div><strong>锁定用户场景</strong><span>把“想做一个东西”改成“谁遇到了什么问题”。</span></div></div>
+          <div class="route-step-line"><span class="route-num">3</span><div><strong>追问主问题</strong><span>用“谁、在哪里、现在怎么办、为什么不够好”筛出主问题。</span></div></div>
+          <div class="route-step-line"><span class="route-num">4</span><div><strong>留下选题初稿</strong><span>一句话选题、可能办法、证据任务和小组分工进入项目材料。</span></div></div>
+        </div>
+      </div>
+    </section>
+
+<section class="slide compact" id="deliverables">
+      <p class="eyebrow">今日产出</p>
+      <h2>两小时结束时，每组要带走什么</h2>
+      <div class="deliverable-map">
+        <div class="deliverable-center">今日<br />带走</div>
+        <div class="deliverable-node"><span class="deliverable-num">1</span><div><strong>场景痛点表</strong><span>至少 3 个具体问题</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">2</span><div><strong>主问题一句话</strong><span>谁、在哪里、遇到什么</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">3</span><div><strong>可能办法草图</strong><span>2-3 个基础版方向</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">4</span><div><strong>证据任务清单</strong><span>访谈、拍照、查已有方案</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">5</span><div><strong>小组分工表</strong><span>推进、记录、查询、准备</span></div></div>
+        <div class="deliverable-node"><span class="deliverable-num">6</span><div><strong>材料衔接</strong><span>进入发明日志和查新线索</span></div></div>
+      </div>
+      <div class="formula">一句话选题 = 帮助谁 + 在什么场景 + 解决什么问题 + 带来什么帮助。</div>
+    </section>
+
+<section class="slide question-slide" id="q-ai-human">
+      <div class="question-layout">
+        <div>
+          <p class="eyebrow">核心问题｜AI 与人的判断</p>
+          <h2 class="big-question">如果 AI 已经能给答案，为什么还需要我们自己发现问题？</h2>
+          <div class="question-chips">
+            <span class="question-chip">提问</span>
+            <span class="question-chip">判断</span>
+            <span class="question-chip">验证</span>
+            <span class="question-chip">选择</span>
+          </div>
+        </div>
+        <div class="question-art">
+          <svg class="line-icon"><use href="#icon-ai"></use></svg>
+          <span>AI 给答案，人来判断</span>
+        </div>
+      </div>
+    </section>
+
+<section class="slide" id="opening">
+      <div class="segment-head">
+        <div>
+          <p class="eyebrow">0-10分钟｜开场讨论</p>
+          <h2>AI这么厉害，为什么还要我们找问题？</h2>
+        </div>
+      </div>
+      <div class="image-led">
+        <div class="photo-stack">
+          <img src="https://images.pexels.com/photos/8466645/pexels-photo-8466645.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱里的蔬果" />
+          <img src="https://images.pexels.com/photos/13323677/pexels-photo-13323677.jpeg?auto=compress&cs=tinysrgb&w=900" alt="会议室灯光" />
+          <img src="https://images.pexels.com/photos/11027265/pexels-photo-11027265.jpeg?auto=compress&cs=tinysrgb&w=900" alt="车辆旁的骑行者" />
+        </div>
+        <div>
+          <div class="bubble-list">
+            <div class="green-bubble">AI 可以给出很多<em>答案</em></div>
+            <div class="green-bubble">但它不知道你身边哪件事<em>最值得做</em></div>
+            <div class="green-bubble">问题要回到真实的人、真实地点、真实后果</div>
+          </div>
+          <div class="big-red-question">人负责提出问题、判断价值、验证真假、做出选择。</div>
+          <div class="cover-pills" style="position: static; margin-top: 26px;">
+            <span class="outline-pill">提问</span>
+            <span class="outline-pill">判断</span>
+            <span class="outline-pill">验证</span>
+            <span class="outline-pill">选择</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="slide" id="story-fridge">
+      <p class="eyebrow">0-10分钟｜生活场景</p>
+      <h2>故事：冰箱里的黄瓜</h2>
+      <div class="image-led reverse">
+        <div>
+          <div class="bubble-list">
+            <div class="green-bubble">周末买菜，黄瓜被放进冰箱后排</div>
+            <div class="green-bubble">工作日太忙，几天没人想起它</div>
+            <div class="green-bubble">周五打开冰箱，已经变软、不能吃</div>
+          </div>
+          <div class="big-red-question">真正的问题不是“冰箱不够高级”，而是食材被忘记。</div>
+        </div>
+        <img class="big-photo" src="https://images.pexels.com/photos/9031976/pexels-photo-9031976.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="孩子查看冰箱食材" />
+      </div>
+      <div class="turns">
+        <div class="turn-card"><strong>现象</strong><span>冰箱后排食材容易被忘记。</span></div>
+        <div class="turn-card"><strong>用户</strong><span>买菜的人、做饭的人、老人家庭、独居学生。</span></div>
+        <div class="turn-card"><strong>现有办法</strong><span>靠记忆、备忘录、家人提醒、打开冰箱查看。</span></div>
+        <div class="turn-card"><strong>问题句</strong><span>忙碌家庭晚饭前才发现蔬菜变质，影响做饭安排。</span></div>
+      </div>
+    </section>
+
+<section class="slide student-work work-note-wall" id="work-ai-think">
+      <div class="work-clock">
+        <div>
+          <strong>2</strong>
+          <span>分钟<br />独立思考</span>
+        </div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">学生时间｜先写再说</p>
+        <h2>写下一个 AI 不能替你判断的问题</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>从家里、学校、路上、果园或办公室里选一个真实场景。</span></div>
+          <div class="work-step"><b>2</b><span>写下：谁遇到了问题？这个问题为什么值得解决？</span></div>
+          <div class="work-step"><b>3</b><span>和同桌交换，看对方是否能听懂这个问题。</span></div>
+        </div>
+        <div class="work-output">留下结果：每人 1 条“真实问题”句子。</div>
+      </div>
+    </section>
+
+<section class="slide" id="invent">
+      <div class="segment-head">
+        <div>
+          <p class="eyebrow">10-25分钟｜发明与创新</p>
+          <h2>发明不是展示新奇，是解决真实问题</h2>
+        </div>
+      </div>
+      <div class="rule-poster">
+        <div class="rule-word">
+          <strong>真实</strong>
+          <span>能说清楚谁遇到了问题，这个问题发生在哪里。</span>
+        </div>
+        <div class="rule-word">
+          <strong>改进</strong>
+          <span>不一定从零发明，也可以让原来的办法更好用。</span>
+        </div>
+        <div class="rule-word">
+          <strong>验证</strong>
+          <span>要能用照片、访谈、试用和比较证明它有用。</span>
+        </div>
+      </div>
+      <div class="rule-question">新奇，不一定有用；智能，不一定解决问题。能帮到真实的人，才是项目的开始。</div>
+    </section>
+
+<section class="slide question-slide" id="q-real-invention">
+      <div class="question-layout">
+        <div>
+          <p class="eyebrow">核心问题｜发明判断</p>
+          <h2 class="big-question">一个想法听起来很有创意，它就一定是好发明吗？</h2>
+          <p class="question-prompt">一个“创意想法”要成为发明选题，必须说明用户、问题和证据。</p>
+          <div class="question-chips">
+            <span class="question-chip">谁会用？</span>
+            <span class="question-chip">解决什么？</span>
+            <span class="question-chip">怎么证明？</span>
+          </div>
+        </div>
+        <div class="question-art">
+          <svg class="line-icon"><use href="#icon-lightbulb"></use></svg>
+          <span>创意想法要变成真问题</span>
+        </div>
+      </div>
+    </section>
+
+<section class="slide compact" id="not-good">
+      <p class="eyebrow">发明与创新</p>
+      <h2>什么想法不适合今天继续做？</h2>
+      <div class="avoid-wall">
+        <div class="avoid-note">
+          <strong>只有新奇，没有用户</strong>
+          <p>例：我要做一个会飞的智能盒子。问题：不知道谁会用，也不知道解决什么问题。</p>
+        </div>
+        <div class="avoid-note">
+          <strong>只换颜色或外观</strong>
+          <p>例：把普通杯子做成更好看的杯子。问题：没有说明改进带来的真实帮助。</p>
+        </div>
+        <div class="avoid-note">
+          <strong>太大、太危险、太难验证</strong>
+          <p>例：我要做无人驾驶汽车。问题：小组无法在课程里做出基础版并测试。</p>
+        </div>
+        <div class="avoid-note">
+          <strong>复制成熟产品，改进点不清楚</strong>
+          <p>例：直接复制智能冰箱或盲区雷达。问题：需要说明我们的不同和改进。</p>
+        </div>
+      </div>
+      <div class="formula">可推进选题：能观察、能比较、能做出基础版、能讲清楚改进点。</div>
+    </section>
+
+<section class="slide compact" id="cases">
+      <p class="eyebrow">比较页</p>
+      <h2>把“想做一个东西”改成“解决一个问题”</h2>
+      <div class="transform-board">
+        <div class="transform-row"><div class="raw-idea">我要做一个智能冰箱</div><div class="arrow-badge">→</div><div class="real-topic">帮助忙碌家庭发现临期或遗忘食材，减少浪费和健康风险。</div></div>
+        <div class="transform-row"><div class="raw-idea">我要做一个农业识别机器人</div><div class="arrow-badge">→</div><div class="real-topic">帮助果农更早记录果实病斑，减少人工巡检遗漏。</div></div>
+        <div class="transform-row"><div class="raw-idea">我要做一个自动关灯系统</div><div class="arrow-badge">→</div><div class="real-topic">发现无人或光线充足区域仍开灯的情况，减少无效用电。</div></div>
+        <div class="transform-row"><div class="raw-idea">我要做一个车辆安全提醒设备</div><div class="arrow-badge">→</div><div class="real-topic">在车辆转弯或倒车时提醒盲区风险，降低剐蹭和行人风险。</div></div>
+      </div>
+      <div class="formula">一句话选题 = 具体用户 + 具体场景 + 真实困难 + 目标结果</div>
+    </section>
+
+<section class="slide" id="users">
+      <p class="eyebrow">内容页</p>
+      <h2>同一个方向里，用户不同，问题也不同</h2>
+      <div class="visual-user-grid">
+        <div class="visual-user">
+          <img src="https://images.pexels.com/photos/8805283/pexels-photo-8805283.jpeg?auto=compress&cs=tinysrgb&w=900" alt="查看冰箱食材的人" />
+          <span class="pill-label">冰箱食材检测</span>
+          <p>忙碌家长、老人家庭、独居学生遇到的问题并不一样。先确定用户，才知道该检测什么、提醒谁。</p>
+        </div>
+        <div class="visual-user">
+          <img src="https://images.pexels.com/photos/1444630/pexels-photo-1444630.jpeg?auto=compress&cs=tinysrgb&w=900" alt="果树上的果实" />
+          <span class="pill-label">果园病状检查</span>
+          <p>果农、采摘园、管理人员关心的不是同一件事。早期病斑、巡检遗漏、区域记录都可能成为选题入口。</p>
+        </div>
+        <div class="visual-user">
+          <img src="https://images.pexels.com/photos/13323677/pexels-photo-13323677.jpeg?auto=compress&cs=tinysrgb&w=900" alt="会议室灯光" />
+          <span class="pill-label">无效照明监控</span>
+          <p>员工、物业、行政看到的是同一个灯，但痛点不同：忘关、难巡查、无法统计浪费。</p>
+        </div>
+        <div class="visual-user">
+          <img src="https://images.pexels.com/photos/5125043/pexels-photo-5125043.jpeg?auto=compress&cs=tinysrgb&w=900" alt="骑行者经过车辆旁" />
+          <span class="pill-label">盲区视觉提醒</span>
+          <p>司机、骑行者、行人都和盲区有关。提醒对象不同，作品的安装位置和演示方式也不同。</p>
+        </div>
+      </div>
+      <div class="formula">先选清楚用户，再讨论做什么方案。</div>
+    </section>
+
+<section class="slide" id="scenes">
+      <p class="eyebrow">场景卡</p>
+      <h2>四个项目方向，各 4 个生活场景</h2>
+      <div class="scene-wall">
+        <div class="scene-photo">
+          <img src="https://images.pexels.com/photos/8466645/pexels-photo-8466645.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="冰箱里的蔬果场景" />
+          <div class="scene-content">
+            <div class="scene-title">冰箱食材检测</div>
+            <div class="scene-tags">
+              <span class="scene-tag">忙碌家庭的临期食材提醒</span>
+              <span class="scene-tag">老人家庭的新鲜度判断</span>
+              <span class="scene-tag">独居学生的食材遗忘</span>
+              <span class="scene-tag">重复购买导致浪费</span>
+            </div>
+          </div>
+        </div>
+        <div class="scene-photo">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_fruits_scab.jpg?width=1200" alt="果实病斑场景" />
+          <div class="scene-content">
+            <div class="scene-title">果园果实病状检查</div>
+            <div class="scene-tags">
+              <span class="scene-tag">果农日常巡园</span>
+              <span class="scene-tag">采摘园开放前检查</span>
+              <span class="scene-tag">早期病斑识别与记录</span>
+              <span class="scene-tag">批量巡检记录</span>
+            </div>
+          </div>
+        </div>
+        <div class="scene-photo">
+          <img src="https://images.pexels.com/photos/16859956/pexels-photo-16859956.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="空会议厅照明场景" />
+          <div class="scene-content">
+            <div class="scene-title">办公区无效照明监控</div>
+            <div class="scene-tags">
+              <span class="scene-tag">无人办公室持续开灯</span>
+              <span class="scene-tag">自然光充足但灯未关闭</span>
+              <span class="scene-tag">会议室结束后未关灯</span>
+              <span class="scene-tag">分区照明浪费</span>
+            </div>
+          </div>
+        </div>
+        <div class="scene-photo">
+          <img src="https://images.pexels.com/photos/11027265/pexels-photo-11027265.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="车辆与骑行者场景" />
+          <div class="scene-content">
+            <div class="scene-title">车辆盲区视觉提醒</div>
+            <div class="scene-tags">
+              <span class="scene-tag">小区转弯行人盲区</span>
+              <span class="scene-tag">停车场倒车后方盲区</span>
+              <span class="scene-tag">右转骑行者盲区</span>
+              <span class="scene-tag">变道侧后方提醒</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formula">场景研究第一步：识别 3 个具体痛点。</div>
+    </section>
+
+<section class="slide student-work tool-switch work-stage" id="work-draw-topic">
+      <div class="work-clock">
+        <div>
+          <strong>抽</strong>
+          <span>切换工具<br />抽取场景</span>
+        </div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">学生时间｜场景抽选</p>
+        <h2>每组抽取一个场景题目</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>暂停课件，切换到抽选工具。</span></div>
+          <div class="work-step"><b>2</b><span>每组确认抽到的项目方向和生活场景。</span></div>
+          <div class="work-step"><b>3</b><span>把场景题目写在小组记录纸顶部。</span></div>
+        </div>
+        <div class="work-output">留下结果：每组 1 个已确认的场景题目。</div>
+      </div>
+    </section>
+
+<section class="slide" id="media-watch">
+      <p class="eyebrow">25-45分钟｜场景观察</p>
+      <h2>用短视频观察真实问题</h2>
+      <div class="video-stage">
+        <a class="video-frame" href="https://www.pexels.com/video/a-woman-getting-a-food-in-the-fridge-6651252/" target="_blank" rel="noreferrer" aria-label="打开冰箱场景视频">
+          <img src="https://images.pexels.com/photos/4061622/pexels-photo-4061622.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="冰箱视频封面" />
+          <span class="play-dot">▶</span>
+        </a>
+        <div>
+          <div class="activity-badge">观察 3 件事</div>
+          <div class="bubble-list" style="margin-top: 28px;">
+            <div class="green-bubble">谁在使用这个场景？</div>
+            <div class="green-bubble">哪里容易出错、遗漏、浪费？</div>
+            <div class="green-bubble">现在的办法为什么不够好？</div>
+          </div>
+        </div>
+      </div>
+      <div class="formula">观察记录：真实场景、受影响的人、现有办法的不足。</div>
+    </section>
+
+<section class="slide student-work work-record-sheet" id="work-observe">
+      <div class="work-clock">
+        <div>
+          <strong>5</strong>
+          <span>分钟<br />观察记录</span>
+        </div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">学生时间｜看图看视频</p>
+        <h2>把看到的问题写成观察记录</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>先不要想作品，先记录画面里发生了什么。</span></div>
+          <div class="work-step"><b>2</b><span>写清楚：谁在使用？哪里容易出错、遗漏或浪费？</span></div>
+          <div class="work-step"><b>3</b><span>补一句：现在的处理方式为什么不够好？</span></div>
+        </div>
+        <div class="work-output">留下结果：每组 1 份观察记录。</div>
+      </div>
+    </section>
+
+<section class="slide question-slide" id="q-find-pain">
+      <div class="question-layout">
+        <div>
+          <p class="eyebrow">核心问题｜找痛点</p>
+          <h2 class="big-question">你抽到的场景里，谁受到影响？问题具体发生在哪里？</h2>
+          <p class="question-prompt">一个清楚的痛点，需要包含真实的人、具体地点和实际后果。</p>
+          <div class="question-chips">
+            <span class="question-chip">谁</span>
+            <span class="question-chip">在哪里</span>
+            <span class="question-chip">什么时候</span>
+            <span class="question-chip">造成什么后果</span>
+          </div>
+        </div>
+        <div class="question-art">
+          <svg class="line-icon"><use href="#icon-user"></use></svg>
+          <span>先找到真实的人</span>
+        </div>
+      </div>
+    </section>
+
+<section class="slide compact" id="pain-words">
+      <p class="eyebrow">25-45分钟｜痛点表达工具</p>
+      <h2>痛点词库：把“有问题”说具体</h2>
+      <div class="word-cloud">
+        <span class="cloud-word big yellow">太慢</span>
+        <span class="cloud-word mid">等待久</span>
+        <span class="cloud-word big green">来不及发现</span>
+        <span class="cloud-word mid blue">重复检查</span>
+        <span class="cloud-word big">看不清</span>
+        <span class="cloud-word mid yellow">判断不准</span>
+        <span class="cloud-word big green">容易漏掉</span>
+        <span class="cloud-word small">记录混乱</span>
+        <span class="cloud-word big blue">坏掉</span>
+        <span class="cloud-word mid">空开灯</span>
+        <span class="cloud-word big yellow">看不到</span>
+        <span class="cloud-word mid green">提醒不及时</span>
+        <span class="cloud-word small">人力多</span>
+        <span class="cloud-word mid blue">不方便长期用</span>
+        <span class="cloud-word big">不愿意用</span>
+      </div>
+      <div class="formula">写痛点时尽量使用具体词：谁在什么时候，因为哪个环节，产生了什么损失或风险。</div>
+    </section>
+
+<section class="slide" id="pain">
+      <div class="segment-head">
+        <div>
+          <p class="eyebrow">25-45分钟｜找痛点</p>
+          <h2>围绕抽到的场景，写出 3 个具体痛点</h2>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="segment-card">
+          <h3>本页目标</h3>
+          <p>识别场景中的具体困难，描述得越具体越好。</p>
+        </div>
+        <div class="segment-card">
+          <h3>这些不算好答案</h3>
+          <ul>
+            <li>“我要做一个机器人”。</li>
+            <li>“很多人都不方便”。</li>
+            <li>“这个东西很智能”。</li>
+          </ul>
+        </div>
+        <div class="segment-card">
+          <h3>拆开来看</h3>
+          <p>“无人办公室持续开灯”可以拆成：员工下班忘记关灯、会议室使用结束无人检查、自然光充足但仍开灯。</p>
+        </div>
+        <div class="segment-card">
+          <h3>小组产出</h3>
+          <p>每组写出至少 3 个痛点，每个痛点都要说清：谁，在什么地方，遇到什么问题。</p>
+          <p><strong>留下结果：</strong>每组 3 条具体痛点。</p>
+        </div>
+      </div>
+      <div class="prompt">痛点记录模板：
+用户：____
+场景：____
+遇到的困难：____
+现在的处理方式：____
+造成的影响：____</div>
+    </section>
+
+<section class="slide" id="story-projects">
+      <p class="eyebrow">25-45分钟｜四个项目的故事入口</p>
+      <h2>四个方向的真实场景</h2>
+      <div class="story-lanes">
+        <div class="story-lane">
+          <img src="https://images.pexels.com/photos/1444630/pexels-photo-1444630.jpeg?auto=compress&cs=tinysrgb&w=900" alt="果园果实" />
+          <strong>果园里的小斑点</strong>
+          <p>果农早上巡园，一棵树上有几十个果子。他走得很快，因为整个果园都要看。一个小病斑今天不明显，几天后可能扩大。问题不是“做农业机器人”，而是早期异常容易漏看，位置和照片也不容易记录。</p>
+        </div>
+        <div class="story-lane">
+          <img src="https://images.pexels.com/photos/16859956/pexels-photo-16859956.jpeg?auto=compress&cs=tinysrgb&w=900" alt="空会议厅灯光" />
+          <strong>会议室的灯</strong>
+          <p>上午 10 点会议结束，大家拿着电脑和水杯走了。门关上了，灯还亮着。中午没人进去，下午也没人进去，到晚上巡查时才发现。问题不是“浪费电”四个字，而是谁负责发现、什么时候发现、怎样留下记录。</p>
+        </div>
+        <div class="story-lane">
+          <img src="https://images.pexels.com/photos/9552140/pexels-photo-9552140.jpeg?auto=compress&cs=tinysrgb&w=900" alt="停车场车辆侧后方" />
+          <strong>停车场里的侧后方</strong>
+          <p>司机倒车时会看后视镜，但旁边慢慢靠近的行人或电动车，可能刚好在看不清的位置。司机不是故意不看，而是车身、柱子、角度和其他车辆会挡住视线。</p>
+        </div>
+        <div class="story-lane">
+          <img src="https://images.pexels.com/photos/8805283/pexels-photo-8805283.jpeg?auto=compress&cs=tinysrgb&w=900" alt="查看冰箱食材" />
+          <strong>冰箱里被挡住的食材</strong>
+          <p>同一个家庭里，买菜的人、做饭的人、整理冰箱的人可能不是同一个人。食材被放到后排后，最容易从“买过”变成“忘了”。</p>
+        </div>
+      </div>
+      <div class="pause-question">场景追问：谁最受影响？问题在哪里发生？现有办法为什么不够好？</div>
+    </section>
+
+<section class="slide" id="pain-demo">
+      <p class="eyebrow">25-45分钟｜四组示范</p>
+      <h2>同一个方向，痛点可以这样写</h2>
+      <div class="pain-board">
+        <img src="https://images.pexels.com/photos/8466645/pexels-photo-8466645.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱蔬果" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_fruits_scab.jpg?width=900" alt="果实病斑" />
+        <img src="https://images.pexels.com/photos/13323677/pexels-photo-13323677.jpeg?auto=compress&cs=tinysrgb&w=900" alt="办公会议室灯光" />
+        <img src="https://images.pexels.com/photos/11027265/pexels-photo-11027265.jpeg?auto=compress&cs=tinysrgb&w=900" alt="车辆旁骑行者" />
+        <div class="bubble-list">
+          <div class="green-bubble">忙碌家庭晚饭前才发现蔬菜已经变质</div>
+          <div class="green-bubble">果农巡园时，早期小病斑容易被漏掉</div>
+          <div class="green-bubble">会议结束后房间没人，但灯继续开到下班后</div>
+          <div class="green-bubble">小区转弯时司机看不到侧前方行人</div>
+        </div>
+        <div class="big-red-question">好痛点句子 = 用户 + 场景 + 现在的问题 + 造成的后果</div>
+      </div>
+    </section>
+
+<section class="slide student-work work-card-grid" id="work-pain-write">
+      <div class="work-clock">
+        <div>
+          <strong>8</strong>
+          <span>分钟<br />小组书写</span>
+        </div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">学生时间｜写 3 条痛点</p>
+        <h2>每组写出 3 个具体痛点</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>每条都要有用户：家庭成员、果农、物业、司机、行人等。</span></div>
+          <div class="work-step"><b>2</b><span>每条都要有场景：厨房、果园、会议室、停车场、小区道路等。</span></div>
+          <div class="work-step"><b>3</b><span>每条都要有后果：浪费、遗漏、发现晚、风险高、记录困难。</span></div>
+        </div>
+        <div class="work-output">留下结果：每组 3 条痛点句子。</div>
+      </div>
+    </section>
+
+<section class="slide" id="ask">
+      <div class="segment-head">
+        <div>
+          <p class="eyebrow">45-60分钟｜四问追问</p>
+          <h2>从 3 个痛点里筛出一个主问题</h2>
+        </div>
+      </div>
+      <div class="compass">
+        <div class="compass-ring"></div>
+        <div class="compass-center">主问题</div>
+        <div class="compass-item"><strong>谁？</strong><span>家庭成员、果农、物业人员、司机、骑行者还是行人？</span></div>
+        <div class="compass-item"><strong>在哪里？</strong><span>厨房、果园、办公室、停车场、小区道路还是路口？</span></div>
+        <div class="compass-item"><strong>现在怎么办？</strong><span>靠记忆、人工检查、手动开关、后视镜、雷达还是经验判断？</span></div>
+        <div class="compass-item"><strong>为什么不够好？</strong><span>不及时、不准确、容易遗漏、依赖人工、成本高或提醒不明显。</span></div>
+      </div>
+    </section>
+
+<section class="slide compact" id="story-office">
+      <p class="eyebrow">45-60分钟｜追问练习</p>
+      <h2>同一个故事，追问后才会变成主问题</h2>
+      <div class="story-grid">
+        <div class="story-card">
+          <strong>没追问前</strong>
+          <p>办公室经常浪费电。这个说法太大，听起来像口号，别人不知道具体发生在哪里，也不知道谁能解决。</p>
+        </div>
+        <div class="story-card">
+          <strong>追问以后</strong>
+          <p>会议结束后房间无人，但灯继续开到下班后，物业很难及时发现，也没有记录哪些房间最常发生。</p>
+        </div>
+      </div>
+      <div class="turns">
+        <div class="turn-card"><strong>谁</strong><span>行政或物业需要更早发现浪费。</span></div>
+        <div class="turn-card"><strong>在哪里</strong><span>会议室、教室、公共办公区。</span></div>
+        <div class="turn-card"><strong>现在怎么办</strong><span>靠人巡查，或下班后统一检查。</span></div>
+        <div class="turn-card"><strong>为什么不够好</strong><span>发现晚、没有记录、不知道高频区域。</span></div>
+      </div>
+      <div class="formula">主问题：怎样帮助行政更早发现无人会议室持续开灯，并记录哪些区域经常浪费？</div>
+    </section>
+
+<section class="slide" id="ask-demo">
+      <div class="segment-head">
+        <div>
+          <p class="eyebrow">45-60分钟｜追问示范</p>
+          <h2>把一个模糊痛点追问到主问题</h2>
+        </div>
+      </div>
+      <div class="formula">模糊说法：办公室经常浪费电。</div>
+      <div class="question-grid">
+        <div class="segment-card">
+          <h3>谁？</h3>
+          <p>行政或物业负责发现浪费。</p>
+        </div>
+        <div class="segment-card">
+          <h3>在哪里？</h3>
+          <p>会议室、教室、公共办公区。</p>
+        </div>
+        <div class="segment-card">
+          <h3>现在怎么办？</h3>
+          <p>靠人巡查，或下班后统一检查。</p>
+        </div>
+        <div class="segment-card">
+          <h3>为什么不够好？</h3>
+          <p>发现晚、没有记录、不知道哪个区域最常浪费。</p>
+        </div>
+      </div>
+      <div class="formula">主问题：怎样帮助行政更早发现无人会议室持续开灯，并记录哪些区域经常浪费？</div>
+    </section>
+
+<section class="slide question-slide" id="q-main-problem">
+      <div class="question-layout">
+        <div>
+          <p class="eyebrow">核心问题｜筛主问题</p>
+          <h2 class="big-question">三个痛点里，哪一个最值得先做？为什么？</h2>
+          <p class="question-prompt">每组只能选一个。理由必须和真实程度、影响大小、能否观察有关。</p>
+          <div class="question-chips">
+            <span class="question-chip">最真实</span>
+            <span class="question-chip">最影响人</span>
+            <span class="question-chip">最能观察</span>
+            <span class="question-chip">最适合做基础版</span>
+          </div>
+        </div>
+        <div class="question-art">
+          <svg class="line-icon"><use href="#icon-check"></use></svg>
+          <span>先选一个主问题</span>
+        </div>
+      </div>
+    </section>
+
+<section class="slide student-work work-funnel-page" id="work-main-problem">
+      <div class="work-clock">
+        <div>
+          <strong>6</strong>
+          <span>分钟<br />小组选择</span>
+        </div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">学生时间｜三选一</p>
+        <h2>从 3 个痛点里<br />选出一个主问题</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>圈出最真实、最能观察、最适合做基础版的一个。</span></div>
+          <div class="work-step"><b>2</b><span>说清楚为什么先做它，而不是另外两个。</span></div>
+          <div class="work-step"><b>3</b><span>把主问题改写成一句完整的话。</span></div>
+        </div>
+        <div class="work-output">留下结果：每组 1 条主问题句子。</div>
+      </div>
+    </section>
+
+<section class="slide student-work work-question-board" id="work-four-questions">
+      <div class="work-clock">
+        <div>
+          <strong>7</strong>
+          <span>分钟<br />填写整理</span>
+        </div>
+      </div>
+      <div class="work-panel">
+        <p class="eyebrow">学生时间｜四问表</p>
+        <h2>把主问题补完整</h2>
+        <div class="work-steps">
+          <div class="work-step"><b>1</b><span>谁：主要受影响的人是谁？</span></div>
+          <div class="work-step"><b>2</b><span>哪里：问题发生在什么地点和什么时候？</span></div>
+          <div class="work-step"><b>3</b><span>现在怎么办：目前靠什么方法处理？为什么不够好？</span></div>
+        </div>
+        <div class="work-output">留下结果：四问表 + 主问题最终句。</div>
+      </div>
+    </section>
+
+<section class="slide break-slide" id="break">
+      <p class="eyebrow">第1课时结束｜下课休息</p>
+      <h2>先休息，再回来把问题变成选题</h2>
+      <div class="break-layout">
+        <div class="break-sign">
+          <div>
+            <strong>下课</strong>
+            <span>休息 10 分钟</span>
+          </div>
+        </div>
+        <div class="break-copy">
+          <p class="lead">这一课时，我们已经完成了最关键的第一步：从生活场景里找到真实问题，并把一个模糊想法追问成了主问题。</p>
+          <div class="bubble-list">
+            <div class="green-bubble">每组已经有了一个主问题方向</div>
+            <div class="green-bubble">每个问题都对应了具体用户和真实场景</div>
+          <div class="green-bubble">接下来要做的，不是继续发散，而是把问题变成一句话选题</div>
+          </div>
+          <div class="formula">休息时想一想：你们组最值得先解决的，到底是哪一个问题？</div>
+        </div>
+      </div>
+    </section>
+
+<section class="slide" id="next-class">
+      <p class="eyebrow">衔接页｜进入第2课时</p>
+      <h2>休息后，我们进入下一步</h2>
+      <p class="lead">第2课时不再只是“发现问题”，而是开始回答三个更重要的问题：这个选题值不值得做？基础版能怎么做？要准备哪些证据？</p>
+      <div class="transition-roadmap">
+        <div class="transition-step">
+          <strong>1</strong>
+          <h3>把问题变成选题</h3>
+          <p>用设计思维和第一性原理，把“痛点”整理成一句清楚、能推进的发明选题。</p>
+        </div>
+        <div class="transition-step">
+          <strong>2</strong>
+          <h3>想 2-3 个基础方案</h3>
+          <p>不求一下子做完整作品，而是先找到能验证、能演示、能比较的基础版方向。</p>
+        </div>
+        <div class="transition-step">
+          <strong>3</strong>
+          <h3>准备项目材料</h3>
+          <p>把方案方向、证据清单、查新线索和小组分工接到发明日志及展示材料中。</p>
+        </div>
+      </div>
+      <div class="formula">第2课时核心任务：把“值得做的问题”，推进成“可以动手做的项目”。</div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
+

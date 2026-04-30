@@ -1,0 +1,14 @@
+# Heavy generated/reference assets kept locally but not versioned
+references/module_notes/lesson01_module_notes/reference_ai_meta_pages/
+references/module_notes/lesson01_module_notes/reference_pdf_pages/
+references/module_notes/lesson01_module_notes/exports/
+references/ppt_assets/
+_archive/
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.bak
+

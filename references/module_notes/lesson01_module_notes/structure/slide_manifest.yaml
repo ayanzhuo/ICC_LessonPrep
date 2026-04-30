@@ -1,0 +1,202 @@
+﻿course:
+  title: "ICC第一次课：AI时代的问题发现与定义"
+  date: "5.1"
+  duration: "2课时，每课时1小时"
+  audience: "4-6年级学生"
+  goal: "从生活麻烦出发，形成项目题目第一版，并自然进入发明日志和查新报告"
+
+slide_types:
+  cover: "封面页，建立主题和课堂气氛"
+  route: "路线页，说明今天怎么走"
+  big-question: "大字号提问页，低信息密度，适合老师停下来提问"
+  timed-activity: "按时间推进的课堂活动页"
+  content: "知识、方法、模板或任务页"
+  media-case: "带图片、案例或外部素材的页面"
+  story-case: "故事页，负责讲清真实场景和课堂追问"
+  media-watch: "视频或案例观看页，负责带问题观察素材"
+  sources: "素材来源页"
+
+slides:
+  - no: 1
+    id: cover
+    type: cover
+    title: "AI时代，先学会发现问题"
+  - no: 2
+    id: route
+    type: route
+    title: "从生活麻烦到项目题目第一版"
+  - no: 3
+    id: deliverables
+    type: content
+    title: "两小时结束时，每组要带走什么"
+  - no: 4
+    id: q-ai-human
+    type: big-question
+    title: "如果 AI 已经能给答案，为什么还需要我们自己发现问题？"
+  - no: 5
+    id: opening
+    type: timed-activity
+    time: "0-10"
+    title: "AI这么厉害，为什么还要我们找问题？"
+  - no: 6
+    id: story-fridge
+    type: story-case
+    title: "故事：冰箱里的黄瓜"
+  - no: 7
+    id: invent
+    type: timed-activity
+    time: "10-25"
+    title: "发明不是炫酷，是解决真实麻烦"
+  - no: 8
+    id: q-real-invention
+    type: big-question
+    title: "一个想法听起来很酷，它就一定是好发明吗？"
+  - no: 9
+    id: not-good
+    type: content
+    title: "什么题目不适合今天继续做？"
+  - no: 10
+    id: cases
+    type: media-case
+    title: "把“想做一个东西”改成“解决一个问题”"
+  - no: 11
+    id: users
+    type: content
+    title: "同一个方向里，用户不同，问题也不同"
+  - no: 12
+    id: scenes
+    type: media-case
+    title: "四个项目方向，各 4 个生活场景"
+  - no: 13
+    id: media-watch
+    type: media-watch
+    title: "视频不是用来看热闹，是用来找问题"
+  - no: 14
+    id: q-find-pain
+    type: big-question
+    title: "你抽到的场景里，谁最烦？他到底烦在哪里？"
+  - no: 15
+    id: pain-words
+    type: content
+    title: "痛点词库：把“很麻烦”说具体"
+  - no: 16
+    id: pain
+    type: timed-activity
+    time: "25-45"
+    title: "围绕抽到的场景，写出 3 个具体麻烦"
+  - no: 17
+    id: story-projects
+    type: story-case
+    title: "把每个方向都讲成一个能想象的场景"
+  - no: 18
+    id: pain-demo
+    type: content
+    title: "同一个方向，痛点可以这样写"
+  - no: 19
+    id: q-main-problem
+    type: big-question
+    title: "三个痛点里，哪一个最值得先做？为什么？"
+  - no: 20
+    id: ask
+    type: timed-activity
+    time: "45-60"
+    title: "从 3 个痛点里筛出一个主问题"
+  - no: 21
+    id: story-office
+    type: story-case
+    title: "同一个故事，追问后才会变成主问题"
+  - no: 22
+    id: ask-demo
+    type: timed-activity
+    time: "45-60"
+    title: "把一个模糊痛点追问到主问题"
+  - no: 23
+    id: design-mindset
+    type: content
+    title: "不要先想设备，先看谁遇到了麻烦"
+  - no: 24
+    id: first-principle
+    type: content
+    title: "用户真正想要的结果是什么？"
+  - no: 25
+    id: story-blindspot
+    type: story-case
+    title: "故事：停车场里的侧后方"
+  - no: 26
+    id: method-use
+    type: content
+    title: "同一个方法，怎么用在你们的项目里"
+  - no: 27
+    id: q-one-sentence
+    type: big-question
+    title: "如果只能用一句话介绍你们的项目，你会怎么说？"
+  - no: 28
+    id: topic-score
+    type: content
+    title: "第一版题目要过四个小检查"
+  - no: 29
+    id: thinking
+    type: timed-activity
+    time: "60-80"
+    title: "用一句话，把你们的项目说清楚"
+  - no: 30
+    id: drafts
+    type: content
+    title: "像这样把题目说清楚"
+  - no: 31
+    id: q-ai-use
+    type: big-question
+    title: "我们应该让 AI 直接替我们决定方案吗？"
+  - no: 32
+    id: ai
+    type: timed-activity
+    time: "80-100"
+    title: "找到可能办法和课后要看的东西"
+  - no: 33
+    id: ai-case-watch
+    type: media-watch
+    title: "查新不是找答案，是看别人已经怎么做"
+  - no: 34
+    id: ai-filter
+    type: content
+    title: "不要照抄，要筛选"
+  - no: 35
+    id: evidence
+    type: media-case
+    title: "把 AI 的回答整理成两类内容"
+  - no: 36
+    id: novelty-start
+    type: content
+    title: "今天不用写完整报告，但要知道查什么"
+  - no: 37
+    id: log-start
+    type: content
+    title: "今天先写骨架，课后再补证据"
+  - no: 38
+    id: team
+    type: timed-activity
+    time: "100-115"
+    title: "让项目从今天开始有人推进"
+  - no: 39
+    id: speech
+    type: content
+    title: "每组按这个顺序说"
+  - no: 40
+    id: close
+    type: timed-activity
+    time: "115-120"
+    title: "今天之后，项目怎么继续往下做"
+  - no: 41
+    id: exit-check
+    type: content
+    title: "每组把这 6 项对齐"
+  - no: 42
+    id: homework
+    type: content
+    title: "下节课带回四样东西"
+  - no: 43
+    id: sources
+    type: sources
+    title: "本课件使用和推荐的图片 / 视频案例"
+
+
