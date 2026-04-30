@@ -3364,6 +3364,43 @@
       text-align: center;
     }
 
+    .method-slide .lead {
+      max-width: 980px;
+      margin-top: 6px;
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 1.42;
+    }
+
+    .method-slide .design-flow {
+      margin-top: 24px;
+    }
+
+    .method-slide .flow-visual {
+      min-height: 285px;
+      gap: 12px;
+    }
+
+    .method-slide .flow-visual .line-icon {
+      width: 108px;
+      height: 108px;
+      padding: 20px;
+    }
+
+    .method-slide .flow-visual strong {
+      font-size: 31px;
+    }
+
+    .method-slide .flow-visual p {
+      font-size: 18px;
+      line-height: 1.36;
+    }
+
+    .method-slide .formula {
+      margin-top: 14px;
+      font-size: 18px;
+    }
+
     .flow-arrow {
       color: #f5c62f;
       font-size: 70px;
@@ -3420,6 +3457,37 @@
       font-size: 27px;
       font-weight: 900;
       line-height: 1.28;
+    }
+
+    .principle-slide .principle-layout {
+      margin-top: 18px;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 28px;
+    }
+
+    .principle-slide .big-object,
+    .principle-slide .principle-copy {
+      min-height: 330px;
+    }
+
+    .principle-slide .big-object .line-icon {
+      width: 205px;
+      height: 205px;
+      padding: 38px;
+    }
+
+    .principle-slide .principle-copy {
+      gap: 12px;
+    }
+
+    .principle-slide .principle-copy h3 {
+      font-size: 34px;
+    }
+
+    .principle-slide .bracket-list p {
+      margin: 10px 0;
+      font-size: 23px;
+      line-height: 1.22;
     }
 
     .green-swoop {
