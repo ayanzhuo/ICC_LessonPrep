@@ -2436,6 +2436,36 @@
       line-height: 1.24;
     }
 
+    .hmw-board {
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .hmw-board .transform-row {
+      grid-template-columns: 1.05fr 58px 1.18fr;
+      gap: 13px;
+      padding: 8px 0;
+    }
+
+    .hmw-board .raw-idea {
+      color: #374151;
+      font-size: 19px;
+      line-height: 1.28;
+      text-decoration: none;
+    }
+
+    .hmw-board .real-topic {
+      color: #174b79;
+      font-size: 21px;
+      line-height: 1.26;
+    }
+
+    .hmw-board .arrow-badge {
+      width: 48px;
+      height: 48px;
+      font-size: 25px;
+    }
+
     .word-cloud {
       display: flex;
       flex-wrap: wrap;

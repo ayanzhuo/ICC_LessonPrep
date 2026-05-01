@@ -72,6 +72,7 @@ Each lesson does not need the same number of pages, but it should usually includ
 - Cover: topic and one-sentence goal
 - Core question page: one big question for classroom discussion
 - Concept or method page: explain the key method clearly
+- HMW bridge page when relevant: change the main problem into a "How Might We..." question before asking for solutions
 - Case or story page: show a real scenario
 - Student work page: give students time to think, write, discuss, or collect evidence
 - Output or homework page: connect naturally to invention log, novelty search, making, or presentation materials
@@ -86,7 +87,7 @@ Each lesson does not need the same number of pages, but it should usually includ
 ## Current Six-Lesson Mapping
 
 - 5.1 Lesson 01: AI-era problem discovery, invention and innovation, scenario pain points.
-- 5.1 Lesson 02: design thinking, first principles, invention topic draft, and AI-assisted questioning.
+- 5.1 Lesson 02: HMW bridge, first principles, invention topic draft, and AI-assisted questioning.
 - 5.2 Lesson 03: how to learn technology in the AI era, hardware sensing basics.
 - 5.2 Lesson 04: simple embedded systems and simple modeling exercises.
 - 5.3 Lesson 05: Taobao material selection, parts, and BOM.
