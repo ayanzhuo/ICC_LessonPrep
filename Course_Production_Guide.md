@@ -79,6 +79,15 @@ Each lesson does not need the same number of pages, but it should usually includ
 - Student work page: give students time to think, write, discuss, or collect evidence
 - Output or homework page: connect naturally to invention log, novelty search, making, or presentation materials
 
+## Current Project Directions
+
+Use these five directions as the shared project baseline unless the cohort changes:
+- Refrigerator food detection
+- Orchard fruit disease inspection
+- Office ineffective lighting monitoring
+- Vehicle blind-spot visual reminder
+- Rare bird smart observation system: camera, AI recognition, and automatic capture record rare bird appearance, staying time, and activity.
+
 ## Avoid
 
 - Do not regenerate a completed lesson from old outer files.

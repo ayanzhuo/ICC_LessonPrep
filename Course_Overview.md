@@ -11,6 +11,13 @@ Core outputs:
 - One-sentence main problem
 - Four-question refinement notes
 
+Project directions:
+- Refrigerator food detection
+- Orchard fruit disease inspection
+- Office ineffective lighting monitoring
+- Vehicle blind-spot visual reminder
+- Rare bird smart observation system
+
 ## 5.1 Lesson 02
 
 File: `Lesson02/lesson02.html`

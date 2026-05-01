@@ -67,6 +67,12 @@
       <circle cx="8" cy="18" r="1.5"></circle>
       <circle cx="16" cy="18" r="1.5"></circle>
     </symbol>
+    <symbol id="icon-bird" viewBox="0 0 24 24">
+      <path d="M5 13c3-5 8-7 14-5-2 4-5 7-10 8"></path>
+      <path d="M8 15c-1 2-3 3-5 3 1-2 2-4 5-5"></path>
+      <path d="M14 8c1-2 3-3 5-3"></path>
+      <circle cx="16" cy="9" r="0.8"></circle>
+    </symbol>
     <symbol id="icon-question" viewBox="0 0 24 24">
       <path d="M9.5 8a3 3 0 1 1 4.8 2.4c-1.4 1-2.3 1.8-2.3 3.6"></path>
       <path d="M12 18h.01"></path>
@@ -101,13 +107,13 @@
         <a href="#first-principle">第一性原理</a>
         <a href="#story-blindspot">盲区故事</a>
         <a href="#first-version">基础版</a>
-        <a href="#project-prototype">四组方案</a>
+        <a href="#project-prototype">五组方案</a>
         <a href="#prototype-materials">材料图</a>
         <a href="#method-use">方案模块</a>
         <a href="#q-ai-use">AI边界</a>
         <a href="#ai">AI追问</a>
         <a href="#ai-example">AI样例</a>
-        <a href="#project-prompts">四组追问</a>
+        <a href="#project-prompts">五组追问</a>
         <a href="#work-ai-ask">筛方案</a>
         <a href="#ai-case-watch">已有案例</a>
         <a href="#ai-filter">筛方案</a>
@@ -133,11 +139,12 @@
         <h1>把问题写成一句话选题</h1>
         <p class="lead">第1课时已经找到主问题；这一课时先把它改写成“我们如何……”，再形成选题、方案和证据。</p>
       </div>
-      <div class="cover-collage" aria-label="四个项目方向图片">
+      <div class="cover-collage" aria-label="五个项目方向图片">
         <img src="https://images.pexels.com/photos/8805274/pexels-photo-8805274.jpeg?auto=compress&cs=tinysrgb&w=900" alt="家中打开冰箱寻找食材" />
         <img src="https://images.pexels.com/photos/14766893/pexels-photo-14766893.jpeg?auto=compress&cs=tinysrgb&w=900" alt="苹果果园" />
         <img src="https://images.pexels.com/photos/12526862/pexels-photo-12526862.jpeg?auto=compress&cs=tinysrgb&w=900" alt="空办公室工位" />
         <img src="https://images.pexels.com/photos/18116563/pexels-photo-18116563.jpeg?auto=compress&cs=tinysrgb&w=900" alt="停车场车辆侧后视镜" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Black-faced_spoonbill.jpg?width=900" alt="湿地里的珍稀鸟类" />
       </div>
     </section>
 
@@ -145,11 +152,12 @@
       <p class="eyebrow">本节路线</p>
       <h2>从“一个问题”推进到“可以继续做的项目”</h2>
       <div class="visual-route">
-        <div class="route-photo-band" aria-label="四个项目方向">
+        <div class="route-photo-band" aria-label="五个项目方向">
           <img src="https://images.pexels.com/photos/4443439/pexels-photo-4443439.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱里的蔬果" />
           <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_fruits_scab.jpg?width=900" alt="果实病斑" />
           <img src="https://images.pexels.com/photos/31517321/pexels-photo-31517321.jpeg?auto=compress&cs=tinysrgb&w=900" alt="下午自然光下的办公室" />
           <img src="https://images.pexels.com/photos/9799735/pexels-photo-9799735.jpeg?auto=compress&cs=tinysrgb&w=900" alt="停车场中的车辆" />
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Black-faced_spoonbill.jpg?width=900" alt="湿地鸟类观测" />
         </div>
         <div class="route-steps-visual">
           <div class="route-step-line"><span class="route-num">1</span><div><strong>先缩小</strong><span>只抓住一个最值得做的用户场景。</span></div></div>
@@ -193,6 +201,11 @@
             <strong>交通里，盲区提醒已经是安全技术</strong>
             <p>车辆能通过摄像头或接近传感器发现驾驶员不容易看到的区域。</p>
           </div>
+          <div class="era-fact">
+            <svg class="line-icon"><use href="#icon-bird"></use></svg>
+            <strong>生态保护里，自动相机能留下出现证据</strong>
+            <p>摄像头和抓拍记录可以帮助巡护人员追踪鸟类出现、停留和活动。</p>
+          </div>
         </div>
       </div>
       <div class="era-question">看视频时别只看它用了什么技术，先听它把异常变成了什么用户价值。</div>
@@ -222,7 +235,7 @@
         <span>怎样识别</span>
         <span>如何证明有价值</span>
       </div>
-      <div class="pause-question">看完后说一句：它和我们的果实病状检查、车辆盲区提醒或办公照明监控像在哪里？</div>
+      <div class="pause-question">看完后说一句：它和我们的果实病状检查、车辆盲区提醒、办公照明监控或鸟类观测像在哪里？</div>
     </section>
 
 <section class="slide compact" id="design-mindset">
@@ -250,7 +263,7 @@
 <section class="slide" id="scene-observe">
       <p class="eyebrow">校准主问题</p>
       <h2>回到场景，检查主问题是否真实</h2>
-      <div class="observation-grid">
+      <div class="observation-grid five-project-grid">
         <div class="observation-card">
           <img src="https://images.pexels.com/photos/4443433/pexels-photo-4443433.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱里摆放的蔬果和饮品" />
           <strong>冰箱食材</strong>
@@ -270,6 +283,11 @@
           <img src="https://images.pexels.com/photos/8096483/pexels-photo-8096483.jpeg?auto=compress&cs=tinysrgb&w=900" alt="停车场里的车辆侧面" />
           <strong>车辆盲区</strong>
           <p>风险从哪个方向出现？提醒应该给司机看还是给行人看？</p>
+        </div>
+        <div class="observation-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Black-faced_spoonbill.jpg?width=900" alt="湿地里的珍稀鸟类" />
+          <strong>鸟类观测</strong>
+          <p>鸟什么时候出现？停留多久？怎样留下自动抓拍记录？</p>
         </div>
       </div>
       <div class="formula">不是重新选题，只是把第1课时的主问题说得更准确。</div>
@@ -354,6 +372,8 @@
         <div class="transform-row"><div class="raw-idea">主问题：食材被忘记，发现时已经临期或变质。</div><div class="arrow-badge">→</div><div class="real-topic">我们如何帮助忙碌家庭及时发现临期或被遗忘的食材？</div></div>
         <div class="transform-row"><div class="raw-idea">主问题：果农巡园时容易漏掉早期病斑。</div><div class="arrow-badge">→</div><div class="real-topic">我们如何帮助果农更早发现并记录果实病斑？</div></div>
         <div class="transform-row"><div class="raw-idea">主问题：无人或自然光充足时仍然开灯。</div><div class="arrow-badge">→</div><div class="real-topic">我们如何帮助办公区发现并提醒无效照明？</div></div>
+        <div class="transform-row"><div class="raw-idea">主问题：停车场倒车时侧后方观察不足。</div><div class="arrow-badge">→</div><div class="real-topic">我们如何帮助司机更早发现车辆盲区风险？</div></div>
+        <div class="transform-row"><div class="raw-idea">主问题：珍稀鸟类出现和停留不容易被及时记录。</div><div class="arrow-badge">→</div><div class="real-topic">我们如何帮助巡护人员自动抓拍并记录珍稀鸟类活动？</div></div>
       </div>
       <div class="formula">主问题说明“哪里不够好”；HMW 打开“我们可以怎么改”。</div>
     </section>
@@ -377,10 +397,10 @@
         为了解决<span class="slot">谁</span>在<span class="slot">什么场景</span>遇到的<span class="slot">什么问题</span>，我们希望设计一个能<span class="slot">带来什么帮助</span>的方案。
       </div>
       <div class="formula-side-notes">
-        <span>谁：忙碌家庭、果农、办公室管理者、司机</span>
-        <span>场景：做饭前、巡园时、会议后、倒车/转弯时</span>
-        <span>问题：遗忘、漏检、浪费、盲区风险</span>
-        <span>帮助：提醒、记录、发现、可视化</span>
+        <span>谁：忙碌家庭、果农、办公室管理者、司机、巡护员</span>
+        <span>场景：做饭前、巡园时、会议后、倒车/转弯时、清晨观测点</span>
+        <span>问题：遗忘、漏检、浪费、盲区风险、活动遗漏</span>
+        <span>帮助：提醒、记录、发现、抓拍、可视化</span>
       </div>
       <div class="formula">HMW 用来想方案；一句话选题用来写进发明日志和展示材料。</div>
     </section>
@@ -408,6 +428,11 @@
           <div class="raw-idea">汽车安全提醒装置</div>
           <div class="arrow-badge">→</div>
           <div class="real-topic">为了解决停车场倒车时侧后方观察不足的问题，设计一个盲区视觉提醒模型。</div>
+        </div>
+        <div class="transform-row">
+          <div class="raw-idea">鸟类智能监控器</div>
+          <div class="arrow-badge">→</div>
+          <div class="real-topic">为了解决巡护人员难以及时记录珍稀鸟类出现和活动的问题，设计一个自动抓拍与观测记录方案。</div>
         </div>
       </div>
       <div class="formula">每组把自己的选题改到“用户、场景、问题、帮助”四项都出现。</div>
@@ -444,6 +469,7 @@
         <div class="draft-line"><svg class="line-icon"><use href="#icon-apple"></use></svg><p>果园：如果照片记录能帮巡检时少漏掉异常果实，就说明方案有帮助。</p></div>
         <div class="draft-line"><svg class="line-icon"><use href="#icon-lamp"></use></svg><p>照明：如果系统能发现无人亮灯或自然光足够仍开灯，就说明方案有帮助。</p></div>
         <div class="draft-line"><svg class="line-icon"><use href="#icon-car"></use></svg><p>盲区：如果提醒能让观察者更早发现盲区风险，就说明方案有帮助。</p></div>
+        <div class="draft-line"><svg class="line-icon"><use href="#icon-bird"></use></svg><p>鸟类：如果自动抓拍能记录出现时间、停留时长和活动照片，就说明方案有帮助。</p></div>
       </div>
       <div class="formula">发明日志里不仅写“我要做什么”，还要写“我怎么知道它有用”。</div>
     </section>
@@ -483,6 +509,7 @@
             <p>果园：先证明“拍照记录 + 异常提示”能减少遗漏。</p>
             <p>照明：先证明“无人/光线足够但灯亮”能被发现。</p>
             <p>盲区：先证明“看不见的位置”能被视觉提醒。</p>
+            <p>鸟类：先证明“识别/抓拍 + 时间记录”能减少观察遗漏。</p>
           </div>
         </div>
       </div>
@@ -540,14 +567,19 @@
           <div class="arrow-badge">→</div>
           <div class="real-topic">基础版：用模型车和盲区区域演示，出现风险时亮灯或屏幕提示。</div>
         </div>
+        <div class="transform-row">
+          <div class="raw-idea">完整生态监测平台</div>
+          <div class="arrow-badge">→</div>
+          <div class="real-topic">基础版：识别一类目标鸟，自动抓拍并记录出现时间。</div>
+        </div>
       </div>
       <div class="formula">基础版的目标：能演示、能测试、能被别人看懂。</div>
     </section>
 
 <section class="slide" id="project-prototype">
-      <p class="eyebrow">四个小组｜基础版可以长什么样</p>
+      <p class="eyebrow">五个小组｜基础版可以长什么样</p>
       <h2>先做一个能跑通的“小系统”</h2>
-      <div class="prototype-grid">
+      <div class="prototype-grid five-project-grid">
         <div class="prototype-card blue">
           <svg class="line-icon"><use href="#icon-fridge"></use></svg>
           <h3>冰箱食材检测</h3>
@@ -576,6 +608,13 @@
           <p><strong>判断：</strong>风险物进入盲区。</p>
           <p><strong>输出：</strong>LED、蜂鸣或屏幕提示。</p>
         </div>
+        <div class="prototype-card teal">
+          <svg class="line-icon"><use href="#icon-bird"></use></svg>
+          <h3>鸟类智慧观测</h3>
+          <p><strong>输入：</strong>摄像头画面、时间、停留区域。</p>
+          <p><strong>判断：</strong>疑似目标鸟出现、停留或活动。</p>
+          <p><strong>输出：</strong>抓拍照片和观测记录表。</p>
+        </div>
       </div>
       <div class="formula">小系统不等于小价值。它能证明一个关键判断，就能继续迭代。</div>
     </section>
@@ -583,7 +622,7 @@
 <section class="slide" id="prototype-materials">
       <p class="eyebrow">基础版材料图</p>
       <h2>基础版通常不需要一开始就很复杂</h2>
-      <div class="material-photo-grid">
+      <div class="material-photo-grid five-project-grid">
         <div class="material-photo">
           <img src="https://images.pexels.com/photos/17210080/pexels-photo-17210080.jpeg?auto=compress&cs=tinysrgb&w=900" alt="冰箱上的食物提醒和购物清单" />
           <strong>标签 / 记录</strong>
@@ -604,12 +643,17 @@
           <strong>模型 / 场景</strong>
           <p>盲区项目先用模型车、道路图和提醒灯说明风险位置。</p>
         </div>
+        <div class="material-photo">
+          <img src="https://images.pexels.com/photos/32881359/pexels-photo-32881359.jpeg?auto=compress&cs=tinysrgb&w=900" alt="户外相机与自然观察" />
+          <strong>相机 / 记录表</strong>
+          <p>鸟类项目先用画面、时间和停留区域跑通抓拍记录。</p>
+        </div>
       </div>
       <div class="formula">能跑通一次完整演示，比堆很多功能更重要。</div>
     </section>
 
 <section class="slide" id="method-use">
-      <p class="eyebrow">四个项目都可以这样想</p>
+      <p class="eyebrow">五个项目都可以这样想</p>
       <h2>发明作品通常由三件事组成</h2>
       <div class="design-flow">
         <div class="flow-visual">
@@ -700,13 +744,14 @@
     </section>
 
 <section class="slide" id="project-prompts">
-      <p class="eyebrow">四个小组｜AI 追问可以这样开始</p>
+      <p class="eyebrow">五个小组｜AI 追问可以这样开始</p>
       <h2>把问题问具体，AI 才可能帮得上忙</h2>
-      <div class="prompt-grid">
+      <div class="prompt-grid five-project-grid">
         <div class="prompt-mini blue"><strong>冰箱</strong><p>如果用户是忙碌家庭，临期食材常被忘记，请帮我追问用户习惯、现有做法、可提醒时机和基础版材料。</p></div>
         <div class="prompt-mini green"><strong>果园</strong><p>如果果农巡园时容易漏看早期病斑，请帮我追问巡园流程、拍照位置、记录方式和异常判断依据。</p></div>
         <div class="prompt-mini amber"><strong>照明</strong><p>如果办公室无人或光线足够时仍开灯，请帮我追问观察证据、判断条件、提醒方式和测试表格。</p></div>
         <div class="prompt-mini red"><strong>盲区</strong><p>如果停车场倒车时侧后方有盲区，请帮我追问风险位置、提醒对象、模型搭建和测试方法。</p></div>
+        <div class="prompt-mini teal"><strong>鸟类</strong><p>如果巡护人员难以及时记录珍稀鸟类出现和停留，请帮我追问观测地点、抓拍条件、识别依据和记录表字段。</p></div>
       </div>
       <div class="pause-question">每组现在用自己的选题问一次 AI，只留下 2-3 个“基础版方案方向”。</div>
     </section>
@@ -737,7 +782,7 @@
 <section class="slide" id="ai-case-watch">
       <p class="eyebrow">已有案例｜看别人怎么做</p>
       <h2>查新不是找答案，是看别人已经怎么做</h2>
-      <div class="case-visual-grid">
+      <div class="case-visual-grid five-project-grid">
         <div class="case-visual">
           <img src="https://images.pexels.com/photos/6508357/pexels-photo-6508357.jpeg?auto=compress&cs=tinysrgb&w=900" alt="现代厨房中的冰箱食材" />
           <strong>智能冰箱识别</strong>
@@ -761,6 +806,12 @@
           <strong>车辆盲区提醒</strong>
           <p>看它如何提醒司机注意侧后方，再问：模型演示中提醒应该给谁看、放在哪里？</p>
           <a class="media-link" href="https://mycardoeswhat.org/blind-spot-monitor-quick-guide/" target="_blank" rel="noreferrer">打开案例</a>
+        </div>
+        <div class="case-visual">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Black-faced_spoonbill.jpg?width=900" alt="湿地珍稀鸟类" />
+          <strong>鸟类识别与记录</strong>
+          <p>看它如何识别鸟类，再问：我们的基础版能否先记录出现时间、停留和抓拍照片？</p>
+          <a class="media-link" href="https://merlin.allaboutbirds.org/" target="_blank" rel="noreferrer">打开案例</a>
         </div>
       </div>
       <div class="turns">
@@ -819,7 +870,7 @@
       <div class="search-board">
         <div class="search-bar-mock">搜索：项目关键词 + 已有产品 / 相似做法 / 使用场景</div>
         <div class="search-steps">
-          <div class="search-step"><strong>关键词</strong><p>智能冰箱、果实病害识别、人体感应灯、盲区监测。</p></div>
+          <div class="search-step"><strong>关键词</strong><p>智能冰箱、果实病害识别、人体感应灯、盲区监测、珍稀鸟类监测。</p></div>
           <div class="search-step"><strong>来源</strong><p>淘宝、百度、产品官网、视频平台、真实生活观察。</p></div>
           <div class="search-step"><strong>截图</strong><p>保留名称、图片、功能说明、价格或使用场景。</p></div>
           <div class="search-step"><strong>比较</strong><p>写清它解决什么，以及哪里还不适合我们的场景。</p></div>
@@ -854,7 +905,7 @@
 <section class="slide" id="novelty-example">
       <p class="eyebrow">查新样例</p>
       <h2>看见已有方案后，写出自己的改进点</h2>
-      <div class="novelty-table">
+      <div class="novelty-table five-project-table">
         <div class="novelty-head">已有方案</div>
         <div class="novelty-head">它已经解决了什么</div>
         <div class="novelty-head">我们的基础版改进点</div>
@@ -870,6 +921,9 @@
         <div>车辆盲区监测</div>
         <div>能提醒侧后方车辆或障碍物。</div>
         <div>用模型演示盲区位置和视觉提醒逻辑。</div>
+        <div>野生动物相机 / 鸟类识别 App</div>
+        <div>能抓拍或识别部分鸟类。</div>
+        <div>聚焦课堂场景，记录出现时间、停留和活动，形成观测表。</div>
       </div>
       <div class="formula">查新截图后面要配一句自己的话：它好在哪里？我们的场景还有什么没解决？</div>
     </section>
@@ -880,7 +934,7 @@
       <div class="log-page log-page-tight">
         <div class="log-line">想解决什么问题：写一句话选题初稿。</div>
         <div class="log-line">怎么想到的：场景卡 + 问题追问 + 小组筛选。</div>
-        <div class="log-line">想达到什么结果：少浪费、少漏检、少耗电、少风险。</div>
+        <div class="log-line">想达到什么结果：少浪费、少漏检、少耗电、少风险、少遗漏且可追踪。</div>
         <div class="log-line">可能方案：写下 2-3 个基础版方案方向。</div>
         <div class="log-line">查新线索：先写关键词，课后补截图。</div>
         <div class="log-line">谁来帮助：小组分工和可访谈的人。</div>

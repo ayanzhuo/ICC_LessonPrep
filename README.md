@@ -19,6 +19,15 @@
 - `Course_Overview.md`
   - Overall plan for the six lessons and follow-up project sessions.
 
+## Project Directions
+
+Current group project directions:
+- Refrigerator food detection
+- Orchard fruit disease inspection
+- Office ineffective lighting monitoring
+- Vehicle blind-spot visual reminder
+- Rare bird smart observation system
+
 ## Collaboration Rules
 
 - When improving Lesson 01, edit only `Lesson01/lesson01.html` unless a shared visual rule requires `assets/common.css`.
