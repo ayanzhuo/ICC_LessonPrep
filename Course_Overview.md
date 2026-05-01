@@ -4,11 +4,11 @@
 
 File: `Lesson01/lesson01.html`
 
-Goal: Help students understand why problem discovery still matters in the AI era, then enter real scenarios and define a main problem.
+Goal: Help students understand why problem discovery still matters in the AI era, then enter real scenarios and define a core pain point.
 
 Core outputs:
 - Scenario pain-point list
-- One-sentence main problem
+- One-sentence core pain point
 - Four-question refinement notes
 
 Project directions:
@@ -22,7 +22,7 @@ Project directions:
 
 File: `Lesson02/lesson02.html`
 
-Goal: Use design thinking and first principles to turn the main problem into an invention topic draft, then use AI to support solution directions and evidence planning.
+Goal: Use design thinking and first principles to turn the core pain point into an invention topic draft, then use AI to support solution directions and evidence planning.
 
 Core outputs:
 - One-sentence invention topic draft

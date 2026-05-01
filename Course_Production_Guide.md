@@ -74,7 +74,7 @@ Each lesson does not need the same number of pages, but it should usually includ
 - Era snapshot page: use 1-3 reliable current facts to show what is already happening in the real world, then connect back to the lesson task.
 - 停顿回答页：先展示问题或观察任务，参考分析放在下一页。
 - Concept or method page: explain the key method clearly
-- HMW bridge page when relevant: change the main problem into a "How Might We..." question before asking for solutions
+- HMW bridge page when relevant: change the core pain point into a "How Might We..." question before asking for solutions
 - Case or story page: show a real scenario
 - Student work page: give students time to think, write, discuss, or collect evidence
 - Output or homework page: connect naturally to invention log, novelty search, making, or presentation materials
