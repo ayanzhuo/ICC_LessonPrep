@@ -4230,26 +4230,43 @@
     }
 
     .gold-video-card {
+      position: relative;
+      display: grid;
+      align-content: end;
       min-height: 318px;
       padding: 28px 28px 24px;
       border: 7px solid #111827;
       border-radius: 26px;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.23), transparent 30%),
-        linear-gradient(145deg, #fff4c8 0%, #f7c948 46%, #b7791f 100%);
+      background: #111827;
+      background-size: cover;
+      background-position: center;
       box-shadow: 12px 12px 0 rgba(17, 24, 39, 0.13);
+      overflow: hidden;
     }
 
-    .gold-video-card.pale {
+    .gold-video-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
       background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.28), transparent 30%),
-        linear-gradient(145deg, #e8f2fb 0%, #8fbde8 48%, #174b79 100%);
+        linear-gradient(180deg, rgba(17, 24, 39, 0.06) 0%, rgba(17, 24, 39, 0.16) 38%, rgba(17, 24, 39, 0.84) 100%);
+    }
+
+    .gold-fire {
+      background-image: url("../assets/gold-rush-fire.png");
+    }
+
+    .gold-skin {
+      background-image: url("../assets/gold-rush-skin.png");
     }
 
     .gold-video-time {
+      position: relative;
+      z-index: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      width: fit-content;
       min-height: 46px;
       padding: 0 18px;
       border: 4px solid #111827;
@@ -4262,25 +4279,34 @@
     }
 
     .gold-video-card h3 {
+      position: relative;
+      z-index: 1;
       margin-top: 24px;
       margin-bottom: 12px;
-      color: #111827;
+      color: #fff;
       font-size: 34px;
       line-height: 1.12;
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
     }
 
     .gold-video-card p {
+      position: relative;
+      z-index: 1;
       margin: 0;
-      color: #111827;
+      color: #fff;
       font-size: 21px;
       font-weight: 900;
       line-height: 1.36;
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
     }
 
     .gold-video-link {
+      position: relative;
+      z-index: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      width: fit-content;
       min-height: 48px;
       margin-top: 22px;
       padding: 0 22px;
@@ -4312,13 +4338,6 @@
       font-size: 19px;
       font-weight: 900;
       box-shadow: 5px 5px 0 rgba(17, 24, 39, 0.10);
-    }
-
-    .gold-time-note {
-      margin-top: 12px;
-      color: #5d6a7c;
-      font-size: 17px;
-      font-weight: 900;
     }
 
     .lesson-two #topic-score .score-wheel {
