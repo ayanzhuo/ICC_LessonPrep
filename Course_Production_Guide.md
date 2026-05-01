@@ -71,6 +71,7 @@ Chinese lesson HTML files must stay UTF-8. Treat encoding as a high-risk rule be
 Each lesson does not need the same number of pages, but it should usually include:
 - Cover: topic and one-sentence goal
 - Core question page: one big question for classroom discussion
+- Era snapshot page: use 1-3 reliable current facts to show what is already happening in the real world, then connect back to the lesson task.
 - 停顿回答页：先展示问题或观察任务，参考分析放在下一页。
 - Concept or method page: explain the key method clearly
 - HMW bridge page when relevant: change the main problem into a "How Might We..." question before asking for solutions
@@ -85,6 +86,7 @@ Each lesson does not need the same number of pages, but it should usually includ
 - Do not merge all lessons into one HTML file.
 - Do not put teacher preparation notes directly on student-facing slides.
 - Do not put a question and its full reference answer on the same slide when students should answer first.
+- Do not open a lesson by throwing out an abstract claim when a concrete social fact, image, or real case can create context first.
 
 ## Current Six-Lesson Mapping
 
