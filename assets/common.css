@@ -4222,6 +4222,43 @@
       height: 146px;
     }
 
+    .lesson-two #design-mindset .task-poster {
+      grid-template-columns: 0.78fr 1.22fr;
+      gap: 34px;
+    }
+
+    .material-checklist {
+      display: grid;
+      gap: 18px;
+      align-content: center;
+      min-height: 380px;
+      padding: 30px;
+      border-radius: 34px;
+      background: #f5c62f;
+      box-shadow: 16px 16px 0 rgba(17, 24, 39, 0.12);
+    }
+
+    .material-checklist strong {
+      display: block;
+      color: #111827;
+      font-size: 46px;
+      line-height: 1.08;
+      text-align: center;
+    }
+
+    .material-checklist span {
+      display: grid;
+      place-items: center;
+      min-height: 58px;
+      border: 4px solid #111827;
+      border-radius: 18px;
+      background: #fff;
+      color: #174b79;
+      font-size: 28px;
+      font-weight: 900;
+      box-shadow: 6px 6px 0 rgba(17, 24, 39, 0.12);
+    }
+
     .gold-video-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
