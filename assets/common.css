@@ -4492,7 +4492,7 @@
     }
 
     .ai-output-card,
-    .ai-filter-card {
+    .ai-keep-card {
       min-height: 350px;
       padding: 30px 32px;
       border: 5px solid #111827;
@@ -4506,13 +4506,13 @@
       transform: rotate(-2deg);
     }
 
-    .ai-filter-card {
+    .ai-keep-card {
       background: #dff3eb;
       transform: rotate(1.5deg);
     }
 
     .ai-output-card strong,
-    .ai-filter-card strong {
+    .ai-keep-card strong {
       display: block;
       margin-bottom: 20px;
       color: #f02118;
@@ -4521,7 +4521,7 @@
     }
 
     .ai-output-card p,
-    .ai-filter-card li {
+    .ai-keep-card li {
       color: #111827;
       font-size: 22px;
       font-weight: 900;
@@ -5377,7 +5377,7 @@
       transform: translateY(-4px);
     }
 
-    .lesson-two .ai-filter-visual {
+    .lesson-two .ai-screen-visual {
       background:
         radial-gradient(circle at 76% 18%, rgba(245, 198, 47, 0.30), transparent 18%),
         #eef7f3;
@@ -5400,7 +5400,7 @@
       box-shadow: 9px 9px 0 rgba(17, 24, 39, 0.12);
     }
 
-    .lesson-two .ai-filter-gate {
+    .lesson-two .ai-screen-gate {
       position: absolute;
       left: 50%;
       top: 226px;
