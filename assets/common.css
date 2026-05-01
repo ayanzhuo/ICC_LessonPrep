@@ -1031,6 +1031,14 @@
       font-weight: 900;
     }
 
+    .pause-question.no-chip {
+      padding-left: 22px;
+    }
+
+    .pause-question.no-chip::before {
+      display: none;
+    }
+
     .watch-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2777,6 +2785,29 @@
       line-height: 1.45;
       word-break: keep-all;
       overflow-wrap: normal;
+    }
+
+    #pain-sentence .check-strip {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    #pain-sentence .check-pill {
+      min-height: 152px;
+      padding: 16px 16px;
+      border-radius: 24px;
+    }
+
+    #pain-sentence .check-pill h3 {
+      font-size: 24px;
+    }
+
+    #pain-sentence .check-pill p {
+      font-size: 15.5px;
+      line-height: 1.42;
+      word-break: normal;
+      overflow-wrap: anywhere;
     }
 
     .deliverable-map {
@@ -4671,12 +4702,13 @@
     }
 
     .prompt-grid.five-project-grid {
-      margin-top: 22px;
+      gap: 10px;
+      margin-top: 20px;
     }
 
     .prompt-grid.five-project-grid .prompt-mini {
-      min-height: 318px;
-      padding: 20px 14px;
+      min-height: 300px;
+      padding: 18px 12px;
       border-width: 4px;
       border-radius: 22px;
       box-shadow: 7px 7px 0 rgba(17, 24, 39, 0.13);
@@ -4685,13 +4717,15 @@
     .prompt-grid.five-project-grid .prompt-mini strong {
       min-width: 60px;
       min-height: 38px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       font-size: 21px;
     }
 
     .prompt-grid.five-project-grid .prompt-mini p {
-      font-size: 15px;
-      line-height: 1.42;
+      font-size: 13.5px;
+      line-height: 1.38;
+      word-break: normal;
+      overflow-wrap: anywhere;
     }
 
     .observation-grid.five-project-grid,
@@ -4902,6 +4936,10 @@
       padding: 12px 18px;
       font-size: 21px;
       line-height: 1.3;
+    }
+
+    #story-blindspot .pause-question:not(.no-chip) {
+      padding-left: 132px;
     }
 
     .lesson-two .cover-collage {
