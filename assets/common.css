@@ -194,6 +194,11 @@
       font-size: 18px;
     }
 
+    .question-slide .eyebrow::before {
+      content: "先想 30 秒｜";
+      color: #f5c62f;
+    }
+
     .big-question {
       max-width: 980px;
       color: #fff;
@@ -963,8 +968,9 @@
     }
 
     .pause-question {
+      position: relative;
       margin-top: 16px;
-      padding: 18px 20px;
+      padding: 18px 20px 18px 148px;
       border: 0;
       border-radius: 12px;
       background: #bfd9d3;
@@ -972,6 +978,23 @@
       font-size: 24px;
       font-weight: 900;
       line-height: 1.45;
+    }
+
+    .pause-question::before {
+      content: "先停一下";
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 104px;
+      height: 34px;
+      border-radius: 999px;
+      background: #111827;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
     }
 
     .watch-grid {
